@@ -158,6 +158,9 @@ body {
     margin-left: 15vw;
     margin-right: 15vw;
     background-color: #000;
+    position: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -176,9 +179,6 @@ body {
     border-radius: 10px;
     height: 100%;
     padding-top: 0.3%;
-    position: flex;
-    align-items: center;
-    justify-content: center;
     box-shadow: 1px 0px 10px #fff;
     background-color: #E8E8E8;
   }
