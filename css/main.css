@@ -351,22 +351,16 @@ footer #linkContatti a img {
   }
 }
 
-#presentazione_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#presentazione_container #presentazione {
+#presentazione {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-#presentazione_container #presentazione p {
+#presentazione p {
   font-family: serif;
   font-size: 18px;
   text-align: center;
-  padding: 20px;
 }
 
 #riassunto {
