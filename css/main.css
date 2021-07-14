@@ -7,7 +7,7 @@ a:hover {
   font-style: italic;
 }
 
-div:after::after {
+div::after {
   display: block;
   content: "";
   clear: both;
@@ -91,12 +91,10 @@ hr {
   padding-left: 20%;
   list-style: none;
 }
-#menu #lista ul li {
-  margin-bottom: 10px;
-}
 #menu #lista ul li a {
   text-decoration: none;
   font-size: 24px;
+  margin-bottom: 10px;
 }
 #menu #lista ul li a img {
   width: 20px;
