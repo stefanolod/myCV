@@ -311,6 +311,7 @@ footer {
   border-top-right-radius: 3px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  margin-top: 5%;
   position: absolute;
   bottom: 0%;
 }
