@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="js/riquadri_competenze.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/menu.js"></script>
+        <title>My CV - Competenze</title>
+    </head>
+    <body>
+        <div id="tutto">
+            <div id="menuDivButton"><a href="#" id="menu_button"><img src="images/logo.png" alt="Logo"></a></div>
+            <div id="menu">
+                <div id="lista">
+                  <div id="exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
+                  <ul>
+                    <li><a href="index.html"><img src="images/home.png" alt="Home"> Home</a></li>
+                    <li><a href="la_mia_storia.html"><img src="images/biography.png" alt="BIO"> La Mia Storia</a></li>
+                    <li><a href="competenze.html"><img src="images/skills.png" alt="Skills"> Competenze</a></li>
+                    <li><a href="hobby.html"><img src="images/hobby.png" alt="Hobby"> Hobby</a></li>
+                  </ul>
+                </div>
+                <div id="resto"></div>
+            </div>
+
+            <p id="titolo">Competenze</p>
+            <hr>
+            <div id="competenze_div">
+                <ul>
+                    <p>Questa è una lista delle mie competenze:
+                        <br> se volete sapere di più relativamente ad una competenza, basta cliccare su di essa e si aprirà un riquadro che la descrive.
+                    </p>
+                    <li><h2>» Competenze Linguistiche </h2>
+                        <div id="lingue">
+                            <a href="#" onclick="mostra_descrizione(this)" id="tedesco">
+                                <img src="images/germania.png" alt="Tedesco" style="width: 85px; border-radius: 50%;" title="Tedesco">
+                                <span>Tedesco</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="italiano">
+                                <img src="images/italia.png" alt="Italiano" style="width: 85px; border-radius: 50%;" title="Italiano">
+                                <span>Italiano</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="inglese">
+                                <img src="images/inglese.png" alt="Inglese" style="width: 85px; border-radius: 50%;" title="Inglese" >
+                                <span>Inglese</span>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <li><h2>» Conoscenza e utilizzo di Software </h2>
+                        <div id="software">
+                            <a href="#" onclick="mostra_descrizione(this)" id="gimp_krita" >
+                                <img src="images/gimp_krita.png" alt="Gimp/Krita"  title="Gimp/Krita">
+                                <span>Gimp/Krita</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="linux" >
+                                <img src="images/tux.png" alt="Linux" title="Linux">
+                                <span>Linux</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="autocad">
+                                <img src="images/autocad.png" alt="autoCAD" class="foto_element" title="autoCAD">
+                                <span>autoCAD</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="git">
+                                <img src="images/git.png" alt="Git" title="Git">
+                                <span>Git</span>
+                            </a>
+                        </div>
+                    </li>
+    
+                    <li><h2>» Linguaggi di programmazione </h2>
+                        <div id="programmazione">
+                            <a href="#" onclick="mostra_descrizione(this)" id="c_c++">
+                                <img src="images/c_c++.png" alt="C/C++" title="C/C++">
+                                <span>C/C++</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="java">
+                                <img src="images/java.png" id="Java" alt="Java" title="Java"> 
+                                <span>Java</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="python">
+                                <img src="images/python.png" alt="Python" title="Python">
+                                <span>Python</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="html">
+                                <img src="images/HTML5.png" alt="HTML" title="HTML">
+                                <span>HTML</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="css_sass">
+                                <img src="images/sass_css3.png" alt="CSS/SASS" title="CSS/SASS">
+                                <span>CSS/SASS</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="javascript_jquery">
+                                <img src="images/javascript_jquery.png" alt="Javascript/jQuery" title="Javascript/jQuery">
+                                <span>Javascript/jQuery</span>
+                            </a>
+                            <a href="#" onclick="mostra_descrizione(this)" id="qt">
+                                <img src="images/qt.png" alt="Qt" title="Qt">
+                                <span>Qt</span>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div id="competenza_descrizione">
+                <div id="competenza_exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
+                <iframe src="#" id="descrizione_frame"></iframe>
+            </div>
+            <footer>
+                <p>Contatti:</p>
+                <div id="linkContatti">
+                    <a href="https://github.com/stefanolod">
+                        <img src="images/github.png" alt="GitHub" title="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/stefano-lodico-8416341b1/">
+                        <img src="images/linked-in.png" alt="LinkedIn" title="LinkedIn">
+                    </a>
+                    <a href="mailto:s.lodico@outlook.it">
+                        <img src="images/mail.png" alt="E-Mail" title="E-Mail">
+                    </a>
+                    <a href="https://t.me/ingStefano">
+                        <img src="images/telegram.png" alt="Telegram" title="Telegram">
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

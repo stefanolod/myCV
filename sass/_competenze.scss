@@ -1,0 +1,117 @@
+#competenze_div {
+    p {
+        font-size: 14px;
+        margin: 5px 15px; 
+        text-align: center;
+    }
+    ul {
+        list-style: none; 
+        margin-top: 1vw;
+        padding-left: 9%;
+        padding-right: 3%;
+        li {
+            #lingue, #software, #programmazione {
+                margin-left: 1px;
+                @include center_items();
+                flex-wrap: wrap;
+                a {
+                    span {
+                        display: block;
+                    }
+                    margin-right: 30px;
+                    margin-top: 1.3vw;
+                    margin-bottom: 20px;
+                    text-decoration: none;
+                    img {
+                        height: 55px;
+                        width: auto;
+                        margin-bottom: 10px;
+                        padding-right: 5px;
+                        background-color: $invisible_color;
+                    }
+                    font-size: 13px;
+                    text-align: center;
+                    padding-top: 5px;
+                }       
+            }
+
+            h2 {
+                font-size: 18px;
+                margin-bottom: 0vw; 
+                margin-top: 1vw;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px){  
+        ul {
+            p {
+                font-size: 15px;
+            }
+            li {
+                #lingue, #software, #programmazione {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items:center;
+                    a {            
+                        img {
+                            height: 75px;
+                            width: auto;
+                        }
+                        span {
+                            font-size: 15px;
+                            visibility: hidden;
+                        }
+                        @include btn_hover_effect();
+                        &:hover {
+                            span {
+                                visibility: visible;
+                            }
+                        }
+                    }       
+                }
+            }
+        }
+    }
+}
+
+#competenza_descrizione {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 5;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #7e7d7dda;
+    #competenza_exit {
+        @include center_items();
+        @include setXY(20px);
+        cursor: pointer;
+        box-shadow: 0.5px 1px 5px;
+        position:relative;
+        @include set_border(solid, 0px, 50px, $invisible_color);
+        background-color: #fff;
+        z-index: 6;
+        bottom: 16%;
+        left: 0%;
+        img {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    iframe {
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px;
+        width: fit-content;
+        height: 15%;
+        position: relative;
+    }
+    @media only screen and (min-width: 768px) {
+        iframe {
+            width: 50%;
+        }
+    }
+}

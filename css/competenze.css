@@ -1,0 +1,23 @@
+html {
+    background-color: #000;
+}
+
+html body {
+    background-color: #ffffffed; 
+    padding: 5vw;
+    border-radius: 10px;
+}
+
+html body p h2 {
+    margin-bottom: 1px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+    font-style: italic;
+} 
