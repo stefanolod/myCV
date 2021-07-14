@@ -356,7 +356,7 @@ footer #linkContatti a img {
 #presentazione_container #presentazione {
   border: 2px groove #dee7e7;
   border-radius: 50%;
-  width: 200px;
+  width: auto;
   height: fit-content;
   display: flex;
   justify-content: center;
