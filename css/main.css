@@ -356,8 +356,8 @@ footer #linkContatti a img {
 #presentazione_container #presentazione {
   border: 2px groove #dee7e7;
   border-radius: 50%;
-  width: auto;
-  height: fit-content;
+  width: 200px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -395,7 +395,7 @@ footer #linkContatti a img {
   margin-bottom: 70px;
   background-color: #fff;
   width: 150px;
-  height: 200px;
+  height: fit-content;
   box-shadow: 1px 1px 10px #000;
 }
 #riassunto #storia p, #riassunto #skills p, #riassunto #hobby p {
