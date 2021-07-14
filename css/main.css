@@ -181,6 +181,9 @@ body {
     padding-top: 0.3%;
     box-shadow: 1px 0px 10px #fff;
     background-color: #E8E8E8;
+    position: flex;
+    align-items: center;
+    justify-content: center;
   }
   #tutto hr {
     margin: 0% 8%;
