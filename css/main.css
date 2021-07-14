@@ -355,8 +355,6 @@ footer #linkContatti a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 10%;
-  padding-left: 10%;
 }
 #presentazione p {
   font-family: serif;
@@ -404,8 +402,7 @@ footer #linkContatti a img {
 }
 @media only screen and (min-width: 768px) {
   #riassunto {
-    margin: 0px 15px;
-    margin-top: 15px;
+    margin: 15px 15px;
     padding: 2% 8%;
     display: flex;
     justify-content: center;
