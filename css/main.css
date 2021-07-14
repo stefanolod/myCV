@@ -355,7 +355,8 @@ footer #linkContatti a img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 #presentazione p {
   font-family: serif;
