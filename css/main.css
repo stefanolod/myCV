@@ -70,6 +70,7 @@ hr {
 #menu #lista {
   display: none;
   min-height: 100%;
+  margin-bottom: 10px;
   left: 0%;
   top: 0%;
   z-index: 10;
