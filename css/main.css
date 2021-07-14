@@ -155,8 +155,6 @@ body {
 }
 @media only screen and (min-width: 768px) {
   body {
-    margin-left: 15vw;
-    margin-right: 15vw;
     background-color: #000;
   }
 }
@@ -178,6 +176,8 @@ body {
     padding-top: 0.3%;
     box-shadow: 1px 0px 10px #fff;
     background-color: #E8E8E8;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   #tutto hr {
     margin: 0% 8%;
