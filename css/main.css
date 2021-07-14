@@ -114,37 +114,45 @@ hr {
 @media only screen and (min-width: 330px) and (max-width: 768px) {
   #menu #lista {
     width: 75%;
+    border-top-left-radius: 10px;
   }
   #menu #resto {
     width: 25%;
     left: 75%;
+    border-top-right-radius: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
   #menu #lista {
     width: 35%;
+    border-top-left-radius: 10px;
   }
   #menu #resto {
     width: 65%;
     left: 35%;
+    border-top-right-radius: 10px;
   }
 }
 @media only screen and (min-width: 1060px) and (max-width: 1300px) {
   #menu #lista {
     width: 25%;
+    border-top-left-radius: 10px;
   }
   #menu #resto {
     width: 75%;
     left: 25%;
+    border-top-right-radius: 10px;
   }
 }
 @media only screen and (min-width: 1300px) {
   #menu #lista {
-    width: 15%;
+    width: 20%;
+    border-top-left-radius: 10px;
   }
   #menu #resto {
-    width: 85%;
-    left: 15%;
+    width: 80%;
+    left: 20%;
+    border-top-right-radius: 10px;
   }
 }
 
