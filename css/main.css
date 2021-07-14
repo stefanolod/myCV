@@ -70,7 +70,6 @@ hr {
 #menu #lista {
   display: none;
   min-height: 100%;
-  margin-bottom: 10px;
   left: 0%;
   top: 0%;
   z-index: 10;
@@ -94,7 +93,7 @@ hr {
 }
 #menu #lista ul li {
   list-style: none;
-  padding-bottom: 0.5vw;
+  padding-bottom: 10px;
 }
 #menu #lista ul li a {
   text-decoration: none;
