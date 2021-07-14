@@ -92,8 +92,7 @@ hr {
   list-style: none;
 }
 #menu #lista ul li {
-  list-style: none;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 #menu #lista ul li a {
   text-decoration: none;
