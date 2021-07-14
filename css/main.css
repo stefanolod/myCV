@@ -310,6 +310,8 @@ footer {
   border-top-right-radius: 3px;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
+  position: absolute;
+  bottom: 0%;
 }
 footer p {
   font-size: 18px;
