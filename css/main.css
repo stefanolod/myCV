@@ -306,7 +306,10 @@ footer {
   background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
   padding-bottom: 4%;
   border-top: 2px solid #000;
-  border-radius: 10px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 footer p {
   font-size: 18px;
