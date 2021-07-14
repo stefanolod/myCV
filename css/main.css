@@ -357,15 +357,9 @@ footer #linkContatti a img {
   align-items: center;
 }
 #presentazione_container #presentazione {
-  border: 2px groove #dee7e7;
-  border-radius: 50%;
-  width: 300px;
-  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #dee7e7;
-  box-shadow: 2px 2px 10px;
   margin-top: 20px;
 }
 #presentazione_container #presentazione p {
