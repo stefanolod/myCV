@@ -180,7 +180,7 @@ body {
   #tutto {
     border: 0px solid #E8E8E8;
     border-radius: 10px;
-    height: 100%;
+    height: fit-content;
     width: 70%;
     padding-top: 0.3%;
     box-shadow: 1px 0px 10px #fff;
