@@ -184,6 +184,8 @@ body {
   #tutto {
     border: 0px solid #E8E8E8;
     border-radius: 10px;
+    height: auto;
+    min-height: 0%;
     width: 70%;
     padding-top: 0.3%;
     box-shadow: 1px 0px 10px #fff;
@@ -352,7 +354,6 @@ footer #linkContatti a img {
 @media screen and (min-width: 768px) {
   footer {
     width: 100%;
-    bottom: 0;
   }
   footer p {
     font-size: 30px;
