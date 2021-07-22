@@ -35,15 +35,23 @@ hr {
   height: 75px;
   margin-top: 15px;
   margin-left: 15px;
+  top: 0.5px;
+  left: 0.5px;
 }
+
 #menuDivButton a {
   width: 75px;
   height: 75px;
 }
-#menuDivButton a img {
-  width: 55px;
-  height: auto;
+#menuDivButton a span {
+  display: block;
+  margin:4px;
+  height: 5px;
+  width: 35px;
+  background: #222222;
+  border-radius: 9px;
 }
+
 @media only screen and (min-width: 768px) {
   #menuDivButton {
     margin: 1vw 1vw;
