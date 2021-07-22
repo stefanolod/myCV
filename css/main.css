@@ -62,7 +62,6 @@ hr {
   background: #222222;
   border-radius: 9px;
 }
-
 @media only screen and (min-width: 768px) {
   #menuDivButton {
     margin-top: 15px;
@@ -229,14 +228,18 @@ body {
   margin: 5px 15px;
   text-align: center;
 }
-#competenze_div ul li #lingue, #competenze_div ul li #software, #competenze_div ul li #programmazione {
+#competenze_div ul li #lingue, 
+#competenze_div ul li #software, 
+#competenze_div ul li #programmazione {
   margin-left: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
-#competenze_div ul li #lingue a, #competenze_div ul li #software a, #competenze_div ul li #programmazione a {
+#competenze_div ul li #lingue a, 
+#competenze_div ul li #software a, 
+#competenze_div ul li #programmazione a {
   margin-right: 30px;
   margin-top: 1.3vw;
   margin-bottom: 20px;
@@ -245,10 +248,14 @@ body {
   text-align: center;
   padding-top: 5px;
 }
-#competenze_div ul li #lingue a span, #competenze_div ul li #software a span, #competenze_div ul li #programmazione a span {
+#competenze_div ul li #lingue a span, 
+#competenze_div ul li #software a span, 
+#competenze_div ul li #programmazione a span {
   display: block;
 }
-#competenze_div ul li #lingue a img, #competenze_div ul li #software a img, #competenze_div ul li #programmazione a img {
+#competenze_div ul li #lingue a img, 
+#competenze_div ul li #software a img, 
+#competenze_div ul li #programmazione a img {
   height: 55px;
   width: auto;
   margin-bottom: 10px;
@@ -326,6 +333,11 @@ body {
   bottom: 16%;
   left: 0%;
 }
+#competenza_descrizione #competenza_exit:hover {
+  opacity: 0.9;
+  transform: scale3d(0.9, 0.9, 0.9);
+  transition: transform 1s;
+}
 #competenza_descrizione #competenza_exit img {
   width: 10px;
   height: 10px;
@@ -333,16 +345,10 @@ body {
 #competenza_descrizione iframe {
   border-radius: 10px;
   box-shadow: 2px 2px 5px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  height: 15%;
+  width: 50%;
+  height: 13%;
   position: relative;
-}
-@media only screen and (min-width: 768px) {
-  #competenza_descrizione iframe {
-    width: 50%;
-  }
 }
 
 footer {
@@ -425,7 +431,9 @@ footer #linkContatti a img {
   font-size: 20px;
   text-align: center;
 }
-#riassunto #storia, #riassunto #skills, #riassunto #hobby {
+#riassunto #storia, 
+#riassunto #skills, 
+#riassunto #hobby {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
   border-bottom-left-radius: 10px;
@@ -437,11 +445,15 @@ footer #linkContatti a img {
   height: fit-content;
   box-shadow: 1px 1px 10px #000;
 }
-#riassunto #storia p, #riassunto #skills p, #riassunto #hobby p {
+#riassunto #storia p, 
+#riassunto #skills p, 
+#riassunto #hobby p {
   font-size: 15px;
   padding: 0px 10px 0px 10px;
 }
-#riassunto #storia img, #riassunto #skills img, #riassunto #hobby img {
+#riassunto #storia img, 
+#riassunto #skills img, 
+#riassunto #hobby img {
   width: 150px;
   height: auto;
   border-top-left-radius: 3px;
@@ -457,12 +469,16 @@ footer #linkContatti a img {
     justify-content: center;
     align-items: center;
   }
-  #riassunto #storia, #riassunto #skills, #riassunto #hobby {
+  #riassunto #storia, 
+  #riassunto #skills, 
+  #riassunto #hobby {
     margin-right: 5%;
     width: 200px;
     height: 230px;
   }
-  #riassunto #storia img, #riassunto #skills img, #riassunto #hobby img {
+  #riassunto #storia img, 
+  #riassunto #skills img, 
+  #riassunto #hobby img {
     width: 200px;
     height: auto;
   }
@@ -486,7 +502,6 @@ footer #linkContatti a img {
 #testo hr {
   margin-top: 2%;
 }
-
 #testo p::after {
   display: block;
   content: "";
@@ -508,7 +523,6 @@ footer #linkContatti a img {
   margin-bottom: 1px;
   border-radius: 50%;
 }
-
 .foto_destra {
   float: right;
   height: 120px;

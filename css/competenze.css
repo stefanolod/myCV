@@ -1,10 +1,14 @@
 html {
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 html body {
     background-color: #ffffffed; 
-    padding: 5vw;
+    padding: 20px;
+    height: fit-content;
     border-radius: 10px;
 }
 
