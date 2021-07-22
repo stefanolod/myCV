@@ -20,10 +20,13 @@ hr {
 
 #titolo {
   position: sticky;
-  display: grid;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
   top: 0%;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding-bottom: 20px;
   border-bottom: 2px solid #000;
   border-top-left-radius: 10px;
@@ -37,24 +40,18 @@ hr {
 }
 @media only screen and (min-width: 768px) {
   #titolo {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-  }
-  #titolo p {
-    margin-bottom: 25px;
+    padding-bottom: 10px;
   }
 }
 
 #menuDivButton {
   position: absolute;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  top: 15px;
+  left: 0px;
   width: 75px;
   height: 75px;
-  margin-top: 3px;
-  margin-left: 3px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 #menuDivButton a span {
   display: block;
@@ -220,16 +217,20 @@ body {
   }
 }
 
-#competenze_div p {
-  font-size: 14px;
-  margin: 5px 15px;
-  text-align: center;
-}
 #competenze_div ul {
   list-style: none;
   margin-top: 1vw;
   padding-left: 9%;
   padding-right: 3%;
+}
+#competenze_div ul p {
+  font-size: 15px;
+  margin: 5px 15px;
+  text-align: center;
+}
+#competenze_div ul li h2 {
+  position: relative;
+  left: -150px;
 }
 #competenze_div ul li #lingue, #competenze_div ul li #software, #competenze_div ul li #programmazione {
   margin-left: 1px;
@@ -258,21 +259,20 @@ body {
   background-color: #00000000;
 }
 #competenze_div ul li h2 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 0vw;
   margin-top: 1vw;
 }
 @media only screen and (min-width: 768px) {
-  #competenze_div ul p {
-    font-size: 15px;
+  #competenze_div ul {
+    padding-right: 0px;
   }
-  #competenze_div ul li #lingue, 
-  #competenze_div ul li #software, 
-  #competenze_div ul li #programmazione {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+  #competenze_div ul p {
+    font-size: 18px;
+  }
+  #competenze_div ul li h2 {
+    position: relative;
+    left: -150px;
   }
   #competenze_div ul li #lingue a img, 
   #competenze_div ul li #software a img, 
@@ -472,26 +472,35 @@ footer #linkContatti a img {
 }
 
 #testo {
-  font-family: serif;
-  font-size: medium;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0px 5px;
+  margin-bottom: 0px;
 }
 #testo h2 {
-  margin-bottom: 1px;
-  margin-top: 2px;
+  margin-top: 0px;
+  margin-bottom: 2px;
+}
+#testo p {
+  font-family: serif;
+  font-size: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 20px;  
 }
 #testo hr {
   margin-top: 2%;
 }
+
+#testo p::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 @media only screen and (min-width: 768px) {
   #testo {
-    font-size: large;
-    padding: 2% 8%;
+    padding: 0% 8%;
   }
   #testo p {
-    margin-top: 2px;
-    margin-left: 20px;
+    font-size: 18px;
   }
 }
 
