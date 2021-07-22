@@ -25,6 +25,7 @@ hr {
   justify-content: center;
   flex-wrap: wrap;
   top: 0%;
+  z-index: 9;
   width: 100%;
   margin-bottom: 25px;
   padding-bottom: 20px;
@@ -227,10 +228,6 @@ body {
   font-size: 15px;
   margin: 5px 15px;
   text-align: center;
-}
-#competenze_div ul li h2 {
-  position: relative;
-  left: -150px;
 }
 #competenze_div ul li #lingue, #competenze_div ul li #software, #competenze_div ul li #programmazione {
   margin-left: 1px;
