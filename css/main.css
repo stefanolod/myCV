@@ -23,8 +23,8 @@ hr {
   display: grid;
   top: 0%;
   width: 100%;
-  margin-bottom: 1%;
-  padding-bottom: 1%;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
   border-bottom: 2px solid #000;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -36,6 +36,10 @@ hr {
   margin-bottom: 0px;
 }
 @media only screen and (min-width: 768px) {
+  #titolo {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+  }
   #titolo p {
     margin-bottom: 25px;
   }
