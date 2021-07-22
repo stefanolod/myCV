@@ -19,29 +19,36 @@ hr {
 }
 
 #titolo {
+  position: sticky;
+  display: grid;
+  top: 0%;
+  width: 100%;
+  border-bottom: 2px solid #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #E8E8E8;
+}
+#titolo p {
   text-align: center;
   font-size: xx-large;
   margin-bottom: 0px;
 }
 @media only screen and (min-width: 768px) {
-  #titolo {
+  #titolo p {
     margin-bottom: 25px;
   }
 }
 
 #menuDivButton {
   position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 75px;
   height: 75px;
   margin-top: 15px;
   margin-left: 15px;
-  top: 0.5px;
-  left: 0.5px;
-}
-
-#menuDivButton a {
-  width: 75px;
-  height: 75px;
 }
 #menuDivButton a span {
   display: block;
@@ -53,14 +60,7 @@ hr {
 }
 
 @media only screen and (min-width: 768px) {
-  #menuDivButton {
-    margin: 1vw 1vw;
-  }
-  #menuDivButton a img {
-    width: 75px;
-    height: auto;
-  }
-  #menuDivButton a img:hover {
+  #menuDivButton:hover {
     opacity: 0.7;
     transition: opacity 1s;
     transform: scale3d(0.9, 0.9, 0.9);
@@ -256,26 +256,37 @@ body {
   #competenze_div ul p {
     font-size: 15px;
   }
-  #competenze_div ul li #lingue, #competenze_div ul li #software, #competenze_div ul li #programmazione {
+  #competenze_div ul li #lingue, 
+  #competenze_div ul li #software, 
+  #competenze_div ul li #programmazione {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
   }
-  #competenze_div ul li #lingue a img, #competenze_div ul li #software a img, #competenze_div ul li #programmazione a img {
-    height: 75px;
+  #competenze_div ul li #lingue a img, 
+  #competenze_div ul li #software a img, 
+  #competenze_div ul li #programmazione a img {
+    height: 80px;
     width: auto;
   }
-  #competenze_div ul li #lingue a span, #competenze_div ul li #software a span, #competenze_div ul li #programmazione a span {
+  #competenze_div ul li #lingue a span, 
+  #competenze_div ul li #software a span, 
+  #competenze_div ul li #programmazione a span {
     font-size: 15px;
     visibility: hidden;
   }
-  #competenze_div ul li #lingue a:hover, #competenze_div ul li #software a:hover, #competenze_div ul li #programmazione a:hover {
+  #competenze_div ul li #lingue a:hover, 
+  #competenze_div ul li #software a:hover, 
+  #competenze_div ul li #programmazione a:hover {
     opacity: 0.7;
     transition: opacity 1s;
     transform: scale3d(0.9, 0.9, 0.9);
     transition: transform 1s;
   }
-  #competenze_div ul li #lingue a:hover span, #competenze_div ul li #software a:hover span, #competenze_div ul li #programmazione a:hover span {
+  #competenze_div ul li #lingue a:hover span, 
+  #competenze_div ul li #software a:hover span, 
+  #competenze_div ul li #programmazione a:hover span {
     visibility: visible;
   }
 }
