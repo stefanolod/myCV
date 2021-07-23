@@ -351,6 +351,11 @@ body {
   position: relative;
 }
 
+@media only screen and (min-width: 768px) {
+  #competenza_descrizione iframe {
+    width: 95%;
+  }  
+}
 footer {
   background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
   padding-bottom: 4%;
