@@ -47,12 +47,19 @@ hr {
 
 #menuDivButton {
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 0px;
   width: 75px;
   height: 75px;
   margin-top: 0px;
   margin-left: 0px;
+}
+#menuDivButton a {
+  text-decoration: none;
+}
+#menuDivButton a:hover {
+  text-decoration: none;
+  font-style: normal;
 }
 #menuDivButton a span {
   display: block;
@@ -61,6 +68,12 @@ hr {
   width: 35px;
   background: #222222;
   border-radius: 9px;
+}
+#menuDivButton a span:nth-last-child(1) {
+  background: none;
+  text-align: center;
+  border-radius: 0%;
+  font-size: 14px;
 }
 @media only screen and (min-width: 768px) {
   #menuDivButton {
@@ -278,7 +291,11 @@ body {
     position: relative;
     left: -150px;
   }
-  #competenze_div ul li #lingue a img, 
+  #competenze_div ul li #lingue a img {
+    width: 85px; 
+    height: auto;
+    border-radius: 50%;
+  } 
   #competenze_div ul li #software a img, 
   #competenze_div ul li #programmazione a img {
     height: 80px;
@@ -503,6 +520,9 @@ footer #linkContatti a img {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 20px;  
+}
+#testo p img {
+  vertical-align: middle;
 }
 #testo hr {
   margin-top: 2%;
