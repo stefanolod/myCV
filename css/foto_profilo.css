@@ -1,0 +1,18 @@
+html {
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html body {
+    background-color: #ffffffed; 
+    padding: 20px;
+    height: fit-content;
+    border-radius: 10px;
+}
+
+#container img {
+    width: 275px;
+    height: auto;
+}

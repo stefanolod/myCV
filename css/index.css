@@ -1,0 +1,438 @@
+#invito {
+  text-align: center;
+  font-family: serif;
+}
+#invito a {
+  color: #000;
+}
+#invito a:hover {
+  font-style: oblique;
+}
+#CI,
+#storia,
+#competenze {
+  display: flex;
+  width: 100%;
+  margin: 20px 40px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
+}
+#CI #foto_profilo {
+  position: relative;
+  left: 50px;
+  margin: 10px 80px 10px 0px;
+  border-radius: 50%;
+}
+#CI #foto_profilo a img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 2px 2px 10px;
+}
+#CI #foto_profilo a {
+  color: #000;
+}
+#CI #dati {
+  position: relative;
+  left: 90px;
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  margin: 10px 0px;
+}
+#CI #dati #nome,
+#CI #dati #nazionalita,
+#CI #dati #lingue_conosciute,
+#CI #dati #residenza  {
+  margin-left: 20px;
+  border-radius: 50%;
+  margin-right: 70px;
+}
+
+#CI #dati #nome span:last-child,
+#CI #dati #nazionalita span:last-child,
+#CI #dati #lingue_conosciute span:last-child,
+#CI #dati #residenza span:last-child {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+#foto_profilo_div {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 10;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #7e7d7dda;
+}
+#foto_profilo_div #foto_profilo_exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  box-shadow: 0.5px 1px 5px;
+  position: relative;
+  border: 0px solid #00000000;
+  border-radius: 50px;
+  background-color: #fff;
+  z-index: 11;
+  top: 50%;
+  left: 0%;
+}
+#foto_profilo_div #foto_profilo_exit:hover {
+  opacity: 0.9;
+  transform: scale3d(0.9, 0.9, 0.9);
+  transition: transform 1s;
+}
+#foto_profilo_div #foto_profilo_exit img {
+  width: 10px;
+  height: 10px;
+}
+#foto_profilo_div iframe {
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px;
+  width: fit-content;
+  width: 340px;
+  height: 340px;
+  position: relative;
+  top: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #foto_profilo iframe {
+    bottom: 50%;
+    width: 20%;
+  }  
+}
+footer {
+  background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
+  padding-bottom: 4%;
+  border-top: 2px solid #000;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  width: 100%;
+  margin-top: 5%;
+  position: relative;
+}
+footer p {
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  padding: 0.5% 2%;
+}
+footer #linkContatti {
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #linkContatti a {
+  display: inline-block;
+  margin-left: 35px;
+  text-align: center;
+  text-decoration: none;
+}
+footer #linkContatti a img {
+  background-color: #00000000;
+  width: 40px;
+  height: auto;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    width: 100%;
+  }
+  footer p {
+    font-size: 30px;
+  }
+  footer #linkContatti a:hover {
+    opacity: 0.7;
+    transition: opacity 1s;
+    transform: scale3d(0.9, 0.9, 0.9);
+    transition: transform 1s;
+  }
+  footer #linkContatti a img {
+    width: 85px;
+    height: auto;
+  }
+}
+body {
+  margin-left: 0%;
+  margin-right: 0%;
+  background-color: #E8E8E8;
+}
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+#menuDivButton {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: 75px;
+  height: 75px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#menuDivButton a {
+  text-decoration: none;
+  color: #000;
+}
+#menuDivButton a:hover {
+  font-style: normal;
+}
+#menuDivButton a span {
+  display: block;
+  margin:4px;
+  height: 5px;
+  width: 35px;
+  background: #222222;
+  border-radius: 9px;
+}
+#menuDivButton a span:last-child {
+  background: none;
+  text-align: center;
+  border-radius: 0%;
+  font-size: 14px;
+}
+@media only screen and (min-width: 768px) {
+  #menuDivButton {
+    margin-top: 15px;
+    margin-left: 15px;
+    top: 5px;
+    left: 0px;
+  }
+  #menuDivButton:hover {
+    opacity: 0.7;
+    transition: opacity 1s;
+    transform: scale3d(0.9, 0.9, 0.9);
+    transition: transform 1s;
+  }
+}
+
+#menu #lista {
+  width: 100%;
+}
+#menu #resto {
+  width: 0%;
+  left: 100%;
+}
+#menu #lista {
+  display: none;
+  min-height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 10;
+  background-color: #faf9f9;
+  position: absolute;
+}
+#menu #lista #exit {
+  margin: 5% 6%;
+  width: 20px;
+  height: auto;
+  position: absolute;
+}
+#menu #lista #exit img {
+  width: 15px;
+  height: auto;
+}
+#menu #lista ul {
+  padding-top: 6%;
+  padding-left: 20%;
+  list-style: none;
+}
+#menu #lista ul li {
+  margin-bottom: 20px;
+}
+#menu #lista ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+#menu #lista ul li a:hover {
+    color: #0a58ca;
+    font-style: italic;
+}
+#menu #lista ul li a img {
+  width: 20px;
+  height: auto;
+}
+#menu #resto {
+  top: 0%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  background-color: #7e7d7dda;
+}
+@media only screen and (min-width: 330px) and (max-width: 768px) {
+  #menu #lista {
+    width: 75%;
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    width: 25%;
+    left: 75%;
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+  #menu #lista {
+    width: 35%;
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    width: 65%;
+    left: 35%;
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1060px) and (max-width: 1300px) {
+  #menu #lista {
+    width: 25%;
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    width: 75%;
+    left: 25%;
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #menu #lista {
+    width: 20%;
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    width: 80%;
+    left: 20%;
+    border-top-right-radius: 10px;
+  }
+}
+#tutto {
+  min-height: 100%;
+  top: 0%;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+}
+@media only screen and (min-width: 768px) {
+  #tutto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 0px solid #E8E8E8;
+    border-radius: 10px;
+    height: auto;
+    min-height: 0%;
+    width: 70%;
+    padding-top: 0.3%;
+    box-shadow: 1px 0px 10px #fff;
+    background-color: #E8E8E8;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  #tutto hr {
+    margin: 0% 8%;
+  }
+}
+#titolo {
+  position: sticky;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  top: 0%;
+  z-index: 9;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #E8E8E8;
+}
+#titolo p {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 0px;
+}
+@media only screen and (min-width: 768px) {
+  #titolo {
+    padding-bottom: 10px;
+  }
+}
+
+#competenze {
+  display: grid;
+
+}
+#competenze p {
+  text-align: center;
+  font-family: serif;
+}
+#competenze p a {
+  color: #000;
+}
+#competenze p a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-style: oblique;
+}
+#competenze #LWQ,
+#competenze #CPG {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0px 60px 10px;
+}
+
+#competenze #LWQ #Linux,
+#competenze #LWQ #webdev,
+#competenze #LWQ #qt,
+#competenze #CPG #python,
+#competenze #CPG #C,
+#competenze #CPG #git {
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background: antiquewhite;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+#competenze #LWQ #linux h2,
+#competenze #LWQ #webdev h2,
+#competenze #LWQ #qt h2,
+#competenze #CPG #python h2,
+#competenze #CPG #c h2
+#competenze #CPG #git h2 {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+#competenze img{
+  height: 50px;
+  width: auto;
+}

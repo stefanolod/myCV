@@ -47,8 +47,8 @@ hr {
 
 #menuDivButton {
   position: absolute;
-  top: 10px;
-  left: 0px;
+  top: 15px;
+  left: 15px;
   width: 75px;
   height: 75px;
   margin-top: 0px;
@@ -79,6 +79,8 @@ hr {
   #menuDivButton {
     margin-top: 15px;
     margin-left: 15px;
+    top: 5px;
+    left: 0px;
   }
   #menuDivButton:hover {
     opacity: 0.7;
@@ -246,7 +248,7 @@ body {
 #competenze_div ul li #programmazione {
   margin-left: 1px;
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -266,6 +268,11 @@ body {
 #competenze_div ul li #programmazione a span {
   display: block;
 }
+#competenze_div ul li #lingue a img {
+  width: 55px; 
+  height: auto;
+  border-radius: 50%;
+} 
 #competenze_div ul li #lingue a img, 
 #competenze_div ul li #software a img, 
 #competenze_div ul li #programmazione a img {
@@ -289,12 +296,10 @@ body {
   }
   #competenze_div ul li h2 {
     position: relative;
-    left: -150px;
+    left: -75px;
   }
   #competenze_div ul li #lingue a img {
     width: 85px; 
-    height: auto;
-    border-radius: 50%;
   } 
   #competenze_div ul li #software a img, 
   #competenze_div ul li #programmazione a img {
@@ -373,6 +378,17 @@ body {
     width: 50%;
   }  
 }
+#CI {
+  display: flex;
+}
+#CI #foto_profilo {
+
+}
+#CI #foto_profilo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+}
 footer {
   background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
   padding-bottom: 4%;
@@ -424,84 +440,6 @@ footer #linkContatti a img {
   }
   footer #linkContatti a img {
     width: 85px;
-    height: auto;
-  }
-}
-
-#presentazione {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#presentazione p {
-  font-family: serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-#riassunto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 3.5px;
-  margin-top: 70px;
-  display: flex;
-  flex-wrap: wrap;
-}
-#riassunto p {
-  font-family: serif;
-  font-size: 20px;
-  text-align: center;
-}
-#riassunto #storia, 
-#riassunto #skills, 
-#riassunto #hobby {
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  margin-right: 10%;
-  margin-bottom: 70px;
-  background-color: #fff;
-  width: 150px;
-  height: fit-content;
-  box-shadow: 1px 1px 10px #000;
-}
-#riassunto #storia p, 
-#riassunto #skills p, 
-#riassunto #hobby p {
-  font-size: 15px;
-  padding: 0px 10px 0px 10px;
-}
-#riassunto #storia img, 
-#riassunto #skills img, 
-#riassunto #hobby img {
-  width: 150px;
-  height: auto;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-@media only screen and (min-width: 768px) {
-  #riassunto {
-    margin: 15px 15px;
-    padding: 2% 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #riassunto #storia, 
-  #riassunto #skills, 
-  #riassunto #hobby {
-    margin-right: 5%;
-    width: 200px;
-    height: 230px;
-  }
-  #riassunto #storia img, 
-  #riassunto #skills img, 
-  #riassunto #hobby img {
-    width: 200px;
     height: auto;
   }
 }
