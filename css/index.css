@@ -8,6 +8,11 @@
 #invito a:hover {
   font-style: oblique;
 }
+div::after {
+  display: block;
+  content: "";
+  clear: both;
+}
 #CI,
 #storia,
 #competenze {
@@ -110,6 +115,62 @@
     width: 20%;
   }  
 }
+
+#competenze {
+  display: grid;
+
+}
+#competenze p {
+  text-align: center;
+  font-family: serif;
+}
+#competenze p a {
+  color: #000;
+}
+#competenze p a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-style: oblique;
+}
+#competenze #LWQ,
+#competenze #CPG {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
+  margin: 0px 60px 10px;
+}
+#competenze #LWQ #Linux,
+#competenze #LWQ #webdev,
+#competenze #LWQ #qt,
+#competenze #CPG #python,
+#competenze #CPG #C,
+#competenze #CPG #git {
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background: antiquewhite;
+  box-shadow: 2px 2px 10px;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+}
+#competenze #LWQ #linux h2,
+#competenze #LWQ #webdev h2,
+#competenze #LWQ #qt h2,
+#competenze #CPG #python h2,
+#competenze #CPG #c h2
+#competenze #CPG #git h2 {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+}
+#competenze img{
+  height: 50px;
+  width: auto;
+}
+
 footer {
   background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
   padding-bottom: 4%;
@@ -379,60 +440,4 @@ body {
   #titolo {
     padding-bottom: 10px;
   }
-}
-
-#competenze {
-  display: grid;
-
-}
-#competenze p {
-  text-align: center;
-  font-family: serif;
-}
-#competenze p a {
-  color: #000;
-}
-#competenze p a:hover {
-  color: #0a58ca;
-  text-decoration: underline;
-  font-style: oblique;
-}
-#competenze #LWQ,
-#competenze #CPG {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-wrap: wrap;
-  width: fit-content;
-  margin: 0px 60px 10px;
-}
-
-#competenze #LWQ #Linux,
-#competenze #LWQ #webdev,
-#competenze #LWQ #qt,
-#competenze #CPG #python,
-#competenze #CPG #C,
-#competenze #CPG #git {
-  text-align: center;
-  padding: 15px;
-  margin: 20px;
-  background: antiquewhite;
-  box-shadow: 2px 2px 10px;
-  border-radius: 10px;
-  width: 300px;
-  height: 200px;
-}
-#competenze #LWQ #linux h2,
-#competenze #LWQ #webdev h2,
-#competenze #LWQ #qt h2,
-#competenze #CPG #python h2,
-#competenze #CPG #c h2
-#competenze #CPG #git h2 {
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-}
-#competenze img{
-  height: 50px;
-  width: auto;
 }
