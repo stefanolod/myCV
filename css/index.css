@@ -1,176 +1,281 @@
-#invito {
-  text-align: center;
-  font-family: serif;
-}
-#invito a {
-  color: #000;
-}
-#invito a:hover {
-  font-style: oblique;
-}
-div::after {
-  display: block;
+div:after {
   content: "";
+  display: table;
   clear: both;
 }
-#CI,
-#storia,
-#competenze {
-  display: flex;
-  width: 100%;
-  margin: 20px 40px 10px;
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px;
-}
-#CI #foto_profilo {
-  position: relative;
-  left: 50px;
-  margin: 10px 80px 10px 0px;
-  border-radius: 50%;
-}
-#CI #foto_profilo a img {
-  width: 120px;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 2px 2px 10px;
-}
-#CI #foto_profilo a {
+
+a {
   color: #000;
 }
-#CI #dati {
-  position: relative;
-  left: 90px;
-  display: flex;
-  justify-items: center;
-  flex-wrap: wrap;
-  margin: 10px 0px;
-}
-#CI #dati #nome,
-#CI #dati #nazionalita,
-#CI #dati #lingue_conosciute,
-#CI #dati #residenza  {
-  margin-left: 20px;
-  border-radius: 50%;
-  margin-right: 70px;
+a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-style: italic;
 }
 
-#CI #dati #nome span:last-child,
-#CI #dati #nazionalita span:last-child,
-#CI #dati #lingue_conosciute span:last-child,
-#CI #dati #residenza span:last-child {
-  margin-left: 10px;
-  margin-top: 0px;
+hr {
+  color: #808080;
+  text-align: center;
 }
 
-#foto_profilo_div {
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
+#titolo {
+  box-shadow: 1px 3px 5px 1px #777777;
+  position: sticky;
   top: 0%;
-  left: 0%;
-  z-index: 10;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #7e7d7dda;
+  z-index: 1;
+  width: 100%;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000;
+  background-color: #E8E8E8;
 }
-#foto_profilo_div #foto_profilo_exit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-  box-shadow: 0.5px 1px 5px;
-  position: relative;
-  border: 0px solid #00000000;
-  border-radius: 50px;
-  background-color: #fff;
-  z-index: 11;
-  top: 50%;
-  left: 0%;
-}
-#foto_profilo_div #foto_profilo_exit:hover {
-  opacity: 0.9;
-  transform: scale3d(0.9, 0.9, 0.9);
-  transition: transform 1s;
-}
-#foto_profilo_div #foto_profilo_exit img {
-  width: 10px;
-  height: 10px;
-}
-#foto_profilo_div iframe {
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px;
-  width: fit-content;
-  width: 340px;
-  height: 340px;
-  position: relative;
-  top: 50%;
+#titolo p {
+  text-align: center;
+  font-size: xx-large;
+  margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 768px) {
-  #foto_profilo iframe {
-    bottom: 50%;
-    width: 20%;
-  }  
+  #titolo {
+    padding-bottom: 10px;
+  }
 }
-
-#competenze {
-  display: grid;
-
+#testo {
+  padding: 0px 5px;
 }
-#competenze p {
-  text-align: center;
+#testo h2 {
+  margin: 2px 0px 1px;
+}
+#testo p {
   font-family: serif;
+  font-size: 15px;
 }
-#competenze p a {
+#testo p a img {
+  vertical-align: middle;
+}
+@media only screen and (min-width: 768px) {
+  #testo {
+    padding: 0.5% 8%;
+  }
+  #testo p {
+    font-size: 18px;
+  }
+}
+
+.foto_sinistra {
+  float: left;
+  height: 120px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  border-radius: 50%;
+}
+
+.foto_destra {
+  float: right;
+  height: 120px;
+  margin-right: 10px;
+  margin-bottom: 1px;
+  border-radius: 50%;
+}
+
+#menuDivButton {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  margin-top: 0px;
+  margin-left: 0px;
+  left: 15px;
+  top: 30px;
+}
+#menuDivButton span {
+  width: 35px;
+  height: 5px;
+  display: block;
+  margin: 4px;
+  background: #222;
+  border-radius: 9px;
+}
+#menuDivButton span:last-child {
+  background: none;
+  text-align: center;
+  border-radius: 0%;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menuDivButton:hover {
+    opacity: 0.7;
+    transition: opacity 1s;
+    transform: scale3d(0.9, 0.9, 0.9);
+    transition: transform 1s;
+  }
+  #menuDivButton:hover {
+    cursor: pointer;
+  }
+}
+#menu #lista {
+  width: 100%;
+  left: 0%;
+}
+#menu #resto {
+  width: 0%;
+  left: 100%;
+}
+#menu #lista {
+  display: none;
+  min-height: 100%;
+  left: 0%;
+  top: 0%;
+  z-index: 3;
+  background-color: #faf9f9;
+  position: absolute;
+}
+#menu #lista ul {
+  padding-top: 0%;
+  padding-left: 20%;
+  list-style: none;
+  position: sticky;
+  top: 2%;
+}
+#menu #lista ul li {
+  margin-bottom: 20px;
+}
+#menu #lista ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  margin-bottom: 10px;
   color: #000;
 }
-#competenze p a:hover {
+#menu #lista ul li a img {
+  width: 20px;
+  height: auto;
+}
+#menu #lista ul li a:hover {
   color: #0a58ca;
-  text-decoration: underline;
-  font-style: oblique;
+  font-style: italic;
 }
-#competenze #LWQ,
-#competenze #CPG {
-  display: flex;
-  align-items: center;
-  justify-items: center;
-  flex-wrap: wrap;
-  width: fit-content;
-  margin: 0px 60px 10px;
+#menu #lista ul #exit {
+  width: 20px;
+  height: auto;
+  position: sticky;
+  transform: translateX(-30px);
 }
-#competenze #LWQ #Linux,
-#competenze #LWQ #webdev,
-#competenze #LWQ #qt,
-#competenze #CPG #python,
-#competenze #CPG #C,
-#competenze #CPG #git {
-  text-align: center;
-  padding: 15px;
-  margin: 20px;
-  background: antiquewhite;
-  box-shadow: 2px 2px 10px;
-  border-radius: 10px;
-  width: 300px;
-  height: 200px;
+#menu #lista ul #exit:hover {
+  cursor: pointer;
 }
-#competenze #LWQ #linux h2,
-#competenze #LWQ #webdev h2,
-#competenze #LWQ #qt h2,
-#competenze #CPG #python h2,
-#competenze #CPG #c h2
-#competenze #CPG #git h2 {
-  text-align: center;
-  align-self: center;
-  justify-self: center;
+#menu #lista ul #exit img {
+  width: 15px;
+  height: auto;
 }
-#competenze img{
-  height: 50px;
-  width: auto;
+#menu #resto {
+  top: 0%;
+  min-height: 100%;
+  position: absolute;
+  z-index: 3;
+  display: none;
+  background-color: #7e7d7dda;
 }
 
+@media only screen and (min-width: 330px) and (max-width: 768px) {
+  #menu #lista {
+    width: 75%;
+    left: 0%;
+  }
+  #menu #resto {
+    width: 25%;
+    left: 75%;
+  }
+  #menu #lista {
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1060px) {
+  #menu #lista {
+    width: 35%;
+    left: 0%;
+  }
+  #menu #resto {
+    width: 65%;
+    left: 35%;
+  }
+  #menu #lista {
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1060px) and (max-width: 1300px) {
+  #menu #lista {
+    width: 25%;
+    left: 0%;
+  }
+  #menu #resto {
+    width: 75%;
+    left: 25%;
+  }
+  #menu #lista {
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    border-top-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #menu #lista {
+    width: 20%;
+    left: 0%;
+  }
+  #menu #resto {
+    width: 80%;
+    left: 20%;
+  }
+  #menu #lista {
+    border-top-left-radius: 10px;
+  }
+  #menu #resto {
+    border-top-right-radius: 10px;
+  }
+}
+body {
+  min-height: 100%;
+  top: 0%;
+  left: 0%;
+  min-width: 100%;
+  position: absolute;
+  margin: 0%;
+  padding: 0%;
+  background-color: #E8E8E8;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #000;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #tutto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 3px 5px 1px #1d1d1d;
+    transition: box-shadow 0.5s;
+    min-width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    top: 0%;
+    background-color: #E8E8E8;
+    position: absolute;
+  }
+}
 footer {
   background-image: linear-gradient(to right, #9ba5da, #bbe7c8, #dee7e7);
   padding-bottom: 4%;
@@ -190,11 +295,12 @@ footer p {
   padding: 0.5% 2%;
 }
 footer #linkContatti {
-  text-decoration: none;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+  position: relative;
 }
 footer #linkContatti a {
   display: inline-block;
@@ -207,6 +313,7 @@ footer #linkContatti a img {
   width: 40px;
   height: auto;
 }
+
 @media screen and (min-width: 768px) {
   footer {
     width: 100%;
@@ -225,219 +332,470 @@ footer #linkContatti a img {
     height: auto;
   }
 }
-body {
-  margin-left: 0%;
-  margin-right: 0%;
-  background-color: #E8E8E8;
+#invito {
+  text-align: center;
+  font-family: serif;
+  font-size: 14px;
+  padding: 0% 10%;
 }
+#invito a {
+  color: #000;
+}
+#invito a:hover {
+  font-style: oblique;
+}
+
 @media only screen and (min-width: 768px) {
-  body {
-    background-color: #000;
+  #invito {
+    font-size: 20px;
+  }
+}
+#CI, #storia, #competenze {
+  box-shadow: 1px 3px 5px 1px #1d1d1d;
+  transition: box-shadow 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 90%;
+  margin: 20px 5px 10px;
+  border-radius: 10px;
+}
+#CI #dati, #storia #dati, #competenze #dati {
+  position: relative;
+  display: grid;
+  margin: 10px 10px 20px;
+}
+#CI #foto_profilo, #storia #foto_profilo, #competenze #foto_profilo {
+  position: relative;
+  border-radius: 50%;
+  left: 0;
+}
+#CI #foto_profilo a, #storia #foto_profilo a, #competenze #foto_profilo a {
+  color: #000;
+}
+#CI #foto_profilo a img, #storia #foto_profilo a img, #competenze #foto_profilo a img {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #CI, #storia, #competenze {
+    position: relative;
+    display: grid;
+    min-width: 98%;
+    margin: 13px;
+  }
+  #CI #foto_profilo, #storia #foto_profilo, #competenze #foto_profilo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    border-radius: 100%;
+    min-width: 100%;
+  }
+  #CI #foto_profilo a, #storia #foto_profilo a, #competenze #foto_profilo a {
+    color: #000;
+  }
+  #CI #foto_profilo a img, #storia #foto_profilo a img, #competenze #foto_profilo a img {
+    width: 120px;
+    height: auto;
+    border-radius: 100%;
+  }
+  #CI #foto_profilo a img:hover, #storia #foto_profilo a img:hover, #competenze #foto_profilo a img:hover {
+    box-shadow: 1px 3px 5px 1px #1d1d1d;
+    transition: box-shadow 0.5s;
+  }
+  #CI #dati, #storia #dati, #competenze #dati {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
+    position: relative;
+  }
+  #CI #dati:after, #storia #dati:after, #competenze #dati:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #CI #dati #nome, #CI #dati #nazionalita, #CI #dati #lingue_conosciute, #CI #dati #residenza, #storia #dati #nome, #storia #dati #nazionalita, #storia #dati #lingue_conosciute, #storia #dati #residenza, #competenze #dati #nome, #competenze #dati #nazionalita, #competenze #dati #lingue_conosciute, #competenze #dati #residenza {
+    margin-right: 90px;
+  }
+  #CI #dati #nome span:first-child h2, #CI #dati #nazionalita span:first-child h2, #CI #dati #lingue_conosciute span:first-child h2, #CI #dati #residenza span:first-child h2, #storia #dati #nome span:first-child h2, #storia #dati #nazionalita span:first-child h2, #storia #dati #lingue_conosciute span:first-child h2, #storia #dati #residenza span:first-child h2, #competenze #dati #nome span:first-child h2, #competenze #dati #nazionalita span:first-child h2, #competenze #dati #lingue_conosciute span:first-child h2, #competenze #dati #residenza span:first-child h2 {
+    transform: translateX(-10px);
+    margin-bottom: 5px;
+  }
+  #CI #dati #nome:last-child, #CI #dati #nazionalita:last-child, #CI #dati #lingue_conosciute:last-child, #CI #dati #residenza:last-child, #storia #dati #nome:last-child, #storia #dati #nazionalita:last-child, #storia #dati #lingue_conosciute:last-child, #storia #dati #residenza:last-child, #competenze #dati #nome:last-child, #competenze #dati #nazionalita:last-child, #competenze #dati #lingue_conosciute:last-child, #competenze #dati #residenza:last-child {
+    margin-right: 0%;
   }
 }
-
-#menuDivButton {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 75px;
-  height: 75px;
-  margin-top: 0px;
-  margin-left: 0px;
-}
-#menuDivButton a {
-  text-decoration: none;
-  color: #000;
-}
-#menuDivButton a:hover {
-  font-style: normal;
-}
-#menuDivButton a span {
-  display: block;
-  margin:4px;
-  height: 5px;
-  width: 35px;
-  background: #222222;
-  border-radius: 9px;
-}
-#menuDivButton a span:last-child {
-  background: none;
-  text-align: center;
-  border-radius: 0%;
-  font-size: 14px;
-}
-@media only screen and (min-width: 768px) {
-  #menuDivButton {
-    margin-top: 15px;
-    margin-left: 15px;
-    top: 5px;
-    left: 0px;
-  }
-  #menuDivButton:hover {
-    opacity: 0.7;
-    transition: opacity 1s;
-    transform: scale3d(0.9, 0.9, 0.9);
-    transition: transform 1s;
-  }
-}
-
-#menu #lista {
+#foto_profilo_div {
   width: 100%;
-}
-#menu #resto {
-  width: 0%;
-  left: 100%;
-}
-#menu #lista {
+  height: 100%;
   display: none;
-  min-height: 100%;
-  left: 0%;
-  top: 0%;
-  z-index: 10;
-  background-color: #faf9f9;
   position: absolute;
-}
-#menu #lista #exit {
-  margin: 5% 6%;
-  width: 20px;
-  height: auto;
-  position: absolute;
-}
-#menu #lista #exit img {
-  width: 15px;
-  height: auto;
-}
-#menu #lista ul {
-  padding-top: 6%;
-  padding-left: 20%;
-  list-style: none;
-}
-#menu #lista ul li {
-  margin-bottom: 20px;
-}
-#menu #lista ul li a {
-  text-decoration: none;
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #000;
-}
-#menu #lista ul li a:hover {
-    color: #0a58ca;
-    font-style: italic;
-}
-#menu #lista ul li a img {
-  width: 20px;
-  height: auto;
-}
-#menu #resto {
-  top: 0%;
-  min-height: 100%;
-  position: absolute;
-  z-index: 10;
-  display: none;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  justify-content: center;
+  overflow: hidden;
   background-color: #7e7d7dda;
 }
-@media only screen and (min-width: 330px) and (max-width: 768px) {
-  #menu #lista {
-    width: 75%;
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    width: 25%;
-    left: 75%;
-    border-top-right-radius: 10px;
-  }
+#foto_profilo_div iframe {
+  z-index: 1;
+  box-shadow: 1px 3px 5px 1px #1d1d1d;
+  transition: box-shadow 0.5s;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  top: 50%;
+  left: 1%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1060px) {
-  #menu #lista {
-    width: 35%;
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    width: 65%;
-    left: 35%;
-    border-top-right-radius: 10px;
-  }
+#foto_profilo_div #foto_profilo_exit {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border: 0px solid #00000000;
+  border-radius: 100%;
+  box-shadow: 1px 3px 5px 1px #1d1d1d;
+  transition: box-shadow 0.5s;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+  top: 50%;
+  left: 0%;
 }
-@media only screen and (min-width: 1060px) and (max-width: 1300px) {
-  #menu #lista {
-    width: 25%;
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    width: 75%;
-    left: 25%;
-    border-top-right-radius: 10px;
-  }
+#foto_profilo_div #foto_profilo_exit img {
+  width: 10px;
+  height: 10px;
 }
-@media only screen and (min-width: 1300px) {
-  #menu #lista {
-    width: 20%;
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    width: 80%;
-    left: 20%;
-    border-top-right-radius: 10px;
-  }
-}
-#tutto {
-  min-height: 100%;
-  top: 0%;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  margin: 0%;
-  padding: 0%;
-}
+
 @media only screen and (min-width: 768px) {
-  #tutto {
+  #foto_profilo_div {
+    justify-content: center;
+    background-color: #7e7d7dda;
+  }
+  #foto_profilo_div #foto_profilo_exit {
+    top: 15%;
+  }
+  #foto_profilo_div iframe {
+    top: 15%;
+  }
+}
+#competenze {
+  display: grid;
+}
+#competenze img {
+  width: auto;
+  height: 50px;
+}
+#competenze p {
+  text-align: center;
+  font-family: serif;
+}
+#competenze p a {
+  color: #000;
+}
+#competenze p a:hover {
+  color: #0a58ca;
+  text-decoration: underline;
+  font-style: oblique;
+}
+#competenze #LWQ, #competenze #CPG {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+#competenze #LWQ #Linux, #competenze #LWQ #webdev, #competenze #LWQ #qt, #competenze #LWQ #python, #competenze #LWQ #C, #competenze #LWQ #git, #competenze #CPG #Linux, #competenze #CPG #webdev, #competenze #CPG #qt, #competenze #CPG #python, #competenze #CPG #C, #competenze #CPG #git {
+  box-shadow: 1px 3px 5px 1px #1d1d1d;
+  transition: box-shadow 0.5s;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 15px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+#competenze #LWQ #Linux img, #competenze #LWQ #webdev img, #competenze #LWQ #qt img, #competenze #LWQ #python img, #competenze #LWQ #C img, #competenze #LWQ #git img, #competenze #CPG #Linux img, #competenze #CPG #webdev img, #competenze #CPG #qt img, #competenze #CPG #python img, #competenze #CPG #C img, #competenze #CPG #git img {
+  margin-bottom: 0%;
+}
+#competenze #LWQ #Linux h2, #competenze #LWQ #webdev h2, #competenze #LWQ #qt h2, #competenze #LWQ #python h2, #competenze #LWQ #C h2, #competenze #LWQ #git h2, #competenze #CPG #Linux h2, #competenze #CPG #webdev h2, #competenze #CPG #qt h2, #competenze #CPG #python h2, #competenze #CPG #C h2, #competenze #CPG #git h2 {
+  display: block;
+  margin-top: 0%;
+  margin-bottom: 3%;
+}
+
+@media only screen and (min-width: 768px) {
+  #competenze {
+    display: grid;
+  }
+  #competenze img {
+    width: auto;
+    height: 50px;
+  }
+  #competenze #LWQ, #competenze #CPG {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    border: 0px solid #E8E8E8;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0px 60px 10px;
+  }
+  #competenze #LWQ #Linux, #competenze #LWQ #webdev, #competenze #LWQ #qt, #competenze #LWQ #python, #competenze #LWQ #C, #competenze #LWQ #git, #competenze #CPG #Linux, #competenze #CPG #webdev, #competenze #CPG #qt, #competenze #CPG #python, #competenze #CPG #C, #competenze #CPG #git {
+    box-shadow: 1px 3px 5px 1px #1d1d1d;
+    transition: box-shadow 0.5s;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
     border-radius: 10px;
-    height: auto;
-    min-height: 0%;
-    width: 70%;
-    padding-top: 0.3%;
-    box-shadow: 1px 0px 10px #fff;
-    background-color: #E8E8E8;
-    margin-left: 15%;
-    margin-right: 15%;
   }
-  #tutto hr {
-    margin: 0% 8%;
+  #competenze #LWQ #Linux h2, #competenze #LWQ #webdev h2, #competenze #LWQ #qt h2, #competenze #LWQ #python h2, #competenze #LWQ #C h2, #competenze #LWQ #git h2, #competenze #CPG #Linux h2, #competenze #CPG #webdev h2, #competenze #CPG #qt h2, #competenze #CPG #python h2, #competenze #CPG #C h2, #competenze #CPG #git h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #competenze p {
+    font-size: 20px;
+  }
+  #competenze p a {
+    color: #000;
+  }
+  #competenze p a:hover {
+    color: #0a58ca;
+    text-decoration: underline;
+    font-style: oblique;
   }
 }
-#titolo {
-  position: sticky;
+#sep_descr {
   display: flex;
-  align-content: center;
+}
+#sep_descr #title_right {
+  position: relative;
+  transform: translateX(75%);
+}
+#sep_descr #title_left {
+  position: relative;
+  transform: translateX(-100%);
+}
+
+#storia {
+  position: relative;
+  display: grid;
+  min-width: 95%;
+  height: auto;
+  padding-bottom: 2%;
+}
+
+#timeline {
+  display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  top: 0%;
-  z-index: 9;
-  width: 100%;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid #000;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-color: #E8E8E8;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-bottom-right-radius: 80px;
+  position: absolute;
+  width: 6px;
+  height: 96%;
+  top: 3%;
+  bottom: 3%;
+  left: 45%;
+  background-color: #000;
 }
-#titolo p {
+
+.container_left {
+  transform: translateX(-75%);
+}
+.container_left #square {
+  width: 20px;
+  height: 6px;
+  background-color: #000;
+  transform: translate(700%, 1040%);
+}
+.container_left #square #point {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  right: 30%;
+  background-color: #000;
+  border-radius: 100%;
+  transform: translateY(-2px);
+}
+
+.container_right {
+  transform: translateX(75%);
+}
+.container_right #square {
+  width: 20px;
+  height: 6px;
+  background-color: #000;
+  transform: translate(-250%, 1040%);
+}
+.container_right #square:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.container_right #square #point {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  left: 90%;
+  background-color: #000;
+  border-radius: 100%;
+  transform: translateY(-2px);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 1px 3px 5px 1px #1d1d1d;
+  transition: box-shadow 0.5s;
+  max-width: 100px;
+  margin: 5% 0% 1%;
+  margin-left: 0%;
+  padding: 0% 5% 0%;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+.content h2 {
+  margin-bottom: 2%;
+  font-size: 16px;
   text-align: center;
-  font-size: xx-large;
-  margin-bottom: 0px;
 }
+.content p {
+  margin-top: 2%;
+  font-size: 14px;
+  padding: 2% 5% 0%;
+}
+
 @media only screen and (min-width: 768px) {
-  #titolo {
-    padding-bottom: 10px;
+  #sep_descr {
+    display: flex;
+  }
+  #sep_descr #title_right {
+    position: relative;
+    left: 30%;
+  }
+  #sep_descr #title_left {
+    position: relative;
+    left: 60%;
+  }
+
+  #storia {
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: auto;
+  }
+
+  .timeline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    position: relative;
+    width: 6px;
+    height: 96%;
+    top: 3%;
+    bottom: 3%;
+    left: 50%;
+    background-color: #000;
+    border-radius: 10px;
+  }
+
+  .container_left {
+    position: relative;
+    transform: translateX(-75%);
+  }
+  .container_left #square {
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    transform: translate(750%, 1040%);
+  }
+  .container_left #square #point {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    right: 30%;
+    background-color: #000;
+    border-radius: 100%;
+    transform: translateY(-2px);
+  }
+
+  .container_right {
+    transform: translateX(75%);
+  }
+  .container_right #square {
+    width: 30px;
+    height: 6px;
+    background-color: #000;
+    transform: translate(-160%, 1040%);
+  }
+  .container_right #square:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .container_right #square #point {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    left: 90%;
+    background-color: #000;
+    border-radius: 100%;
+    transform: translateY(-2px);
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 3px 5px 1px #1d1d1d;
+    transition: box-shadow 0.5s;
+    max-width: 200px;
+    margin: 5% 2% 1%;
+    padding: 0% 5% 0%;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+  }
+  .content h2 {
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .content p {
+    margin-top: 2%;
   }
 }

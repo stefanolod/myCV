@@ -13,222 +13,224 @@
   <body>
     <div id="tutto">
       <div id="titolo">
-        <div id="menuDivButton">
-          <a href="#" id="menu_button">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span>Menu</span>
-          </a>
+        <div id="menuDivButton" onclick="avvia_menu()">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span>Menu</span>
         </div>
         <p>Home</p>
-    </div>
-        <div id="menu">
-          <div id="lista">
-            <div id="exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
-            <ul>
-              <li><a href="index.html"><img src="images/home.png" alt="Home"> Home</a></li>
-              <li><a href="la_mia_storia.html"><img src="images/biography.png" alt="BIO"> La Mia Storia</a></li>
-              <li><a href="competenze.html"><img src="images/skills.png" alt="Skills"> Competenze</a></li>
-              <li><a href="hobby.html"><img src="images/hobby.png" alt="Hobby"> Hobby</a></li>
-            </ul>
-          </div>
-          <div id="resto"></div>
+      </div>
+      <div id="menu">
+        <div id="lista">
+          <ul>
+            <div id="exit"><img src="images/x_exit.png" alt="X"></div>
+            <li><a href="index.html"><img src="images/home.png" alt="Home"> Home</a></li>
+            <li><a href="la_mia_storia.html"><img src="images/biography.png" alt="BIO"> La Mia Storia</a></li>
+            <li><a href="competenze.html"><img src="images/skills.png" alt="Skills"> Competenze</a></li>
+            <li><a href="hobby.html"><img src="images/hobby.png" alt="Hobby"> Hobby</a></li>
+          </ul>
         </div>
+        <div id="resto"></div>
+      </div>
         
-        <div id="foto_profilo_div">
-          <div id="foto_profilo_exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
-          <iframe src="foto_profilo_estesa.html" id="foto_profilo_frame"></iframe>
+      <div id="foto_profilo_div">
+        <div id="foto_profilo_exit"><img src="images/x_exit.png" alt="X"></div>
+        <iframe src="foto_profilo_estesa.html" id="foto_profilo_frame"></iframe>
+      </div>
+      <p id="invito"><strong>»</strong> Se vi interessa saperne di più su di me, sulla pagina <a href="la_mia_storia.html">La Mia Storia</a> c'è una mia biografia, mentre
+      sulla pagina <a href="hobby.html">Hobby</a> racconto dei miei hobby <strong>«</strong></p>
+      <div id="CI">
+        <div id="foto_profilo">
+          <a href="javascript:void(0)" onclick="mostra_foto_estesa()">
+            <img src="images/selfie_laurea.png"  alt="Foto Profilo">
+          </a>
         </div>
-        <p id="invito">Se vi interessa saperne di più su di me, sulla pagina <a href="la_mia_storia.html">La Mia Storia</a> c'è una mia biografia, mentre
-        sulla pagina <a href="hobby.html">Hobby</a> racconto dei miei hobby</p>
-        <div id="CI">
-          <div id="foto_profilo">
-            <a href="javascript:void(0)" onclick="mostra_foto_estesa()">
-              <img src="images/selfie_laurea.png"  alt="Foto Profilo">
+        <div id="dati">
+          <div id="nome">
+            <span><h2>Nome:</h2></span>
+            <span>Stefano Lodico</span>
+          </div>
+          <div id="nazionalita">
+            <span><h2>Nazionalità:</h2></span>
+            <span>Italiana</span>
+          </div>
+          <div id="residenza">
+            <span><h2>Luogo di residenza:</h2></span>
+            <span>Canicattì (AG)</span>
+          </div>
+          <div id="lingue_conosciute">
+            <span><h2>Lingue conosciute:</h2></span>
+            <span>Italiano, Inglese, Tedesco</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="storia">
+        <div id="sep_descr">
+          <div id="title_left"><h2>Studio</h2></div>
+          <div id="title_right"><h2>Lavoro</h2></div>
+        </div>
+        <div id="timeline"></div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>23 nov 2020</h2>
+              <p>Abilitazione alla professione di Ingegnere dell'informazione Junior (Sez. B)</p>
+            </div>
+          </div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 09.2018 a 07.2019</h2>
+              <p>Corso di tedesco (A1) presso D.I.G. Remscheid eV</p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 08.2018 a 03.2019</h2>
+              <p>Addetto al confezionamento presso Brook & Witkowski GmbH (DE)</p>
+            </div>
+          </div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>16 mar 2018</h2>
+              <p>Laurea in <br> Ing. Gestionale e Informatica (Università di Palermo)</p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 06.2016 a 07.2016</h2>
+              <p>Tirocinio di 75 presso Telesicurezza Service s.r.l.</p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 08.2016 a 09.2016</h2>
+              <p>Collaborazione in un team per un progetto universitario in UML</p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 03.2014 a 07.2014</h2>
+              <p>Progetto universitario in team per lo sviluppo di un prodotto.</p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>da 03.2013 a 09.2013</h2>
+              <p>Progetti universitari di disegno meccanico in 2D (CAD 2D).</p>
+            </div>
+          </div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>02 lug 2012</h2>
+              <p>Diploma Liceo Scientifico presso Liceo Scientifico A. Sciascia (Canicattì)</p>
+            </div>
+          </div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>02 lug 2007</h2>
+              <p>Diploma Scuola Media presso Istituto Comprensivo Statale "L. Pirandello" (Canicattì) </p>
+            </div>
+          </div>
+          <div class="container_left">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>09 mar 2006</h2>
+              <p>European Computer Driver Licence (ECDL)</p>
+            </div>
+          </div>
+          <div class="container_right">
+            <div id="square"><div id="point"></div></div>
+            <div class="content">
+              <h2>02 lug 2004</h2>
+              <p>Diploma Scuola Elementare presso la scuola "V. La Carrubba" (Canicattì) </p>
+            </div>
+          </div>
+      </div>
+
+      <div id="competenze">
+        <p><strong>»</strong> Queste sono solo alcune delle mie competenze, per conoscere tutte le mie competenze (con le dovute descrizioni), troverete tutto nella pagina
+          <a href="competenze.html">Le Mie Competenze<strong>«</strong></a>
+        </p>
+        <div id="LWQ">
+          <div id="Linux">
+            <span>
+              <img src="images/tux.png" alt="Linux">
+              <h2>Linux</h2>
+                  Utilizzo Linux da molti anni come unico OS per il mio laptop. 
+                  Oggi Utilizzo una distribuzione Arch Linux.
+            </span>
+          </div>
+          <div id="webdev">
+            <span>
+              <img src="images/webdev.png" alt="Web Development"> 
+              <h2>Web Development (Frontend)</h2>
+              Ho studiato HTML, CSS (usando anche SASS e SCSS) e JavaScript (usando anche jQuery) da autodidatta,
+              dopo tanti esercizi di utilizzo riesco a padroneggiarli discretamente.
+            </span>
+          </div>
+          <div id="qt">
+            <span>
+              <img src="images/qt.png" alt="Qt">
+              <h2>Qt</h2>
+              Ho usato la libreria Qt (con C++) per poter dare una GUI ai miei progetti in C++.
+            </span>
+          </div>
+        </div>
+        <div id="CPG">
+          <div id="C">
+            <span>
+              <img src="images/c_c++.png" alt="C C++"> 
+              <h2>C/C++</h2>
+              Sono stati i miei primi linguaggi di programmazione,
+              li utilizzo ancora oggi per vari progetti vista la loro diffusione.
+            </span>
+          </div>
+          <div id="python">
+            <span>
+              <img src="images/python.png" alt="Python"> 
+              <h2>Python</h2>
+              Studiato da autodidatta e usato per fare alcuni progetti personali.
+              Sono molto sorpreso per la sua estrema potenza, semplicità e versatilità.
+            </span>
+          </div>
+          <div id="git">
+            <span>
+              <img src="images/git.png" alt="Git">
+              <h2>Git</h2>
+              Utilizzo git per poter caricare (push o "pushare") i miei progetti sul mio profilo GitHub, 
+              evitando così che vadano persi.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <p>Contatti:</p>
+        <div id="linkContatti">
+            <a href="https://github.com/stefanolod">
+                <img src="images/github.png" alt="GitHub" title="GitHub">
             </a>
-          </div>
-          <div id="dati">
-            <div id="nome">
-              <span><h2>Nome:</h2></span>
-              <span>Stefano Lodico</span>
-            </div>
-            <div id="nazionalita">
-              <span><h2>Nazionalità:</h2></span>
-              <span>Italiana</span>
-            </div>
-            <div id="residenza">
-              <span><h2>Luogo di residenza:</h2></span>
-              <span>Canicattì (AG)</span>
-            </div>
-            <div id="lingue_conosciute">
-              <span><h2>Lingue conosciute:</h2></span>
-              <span>Italiano, Inglese, Tedesco</span>
-            </div>
-          </div>
+            <a href="https://www.linkedin.com/in/stefano-lodico-8416341b1/">
+                <img src="images/linked-in.png" alt="LinkedIn" title="LinkedIn">
+            </a>
+            <a href="mailto:s.lodico@outlook.it">
+                <img src="images/mail.png" alt="E-Mail" title="E-Mail">
+            </a>
+            <a href="https://t.me/ingStefano">
+                <img src="images/telegram.png" alt="Telegram" title="Telegram">
+            </a>
         </div>
-
-        <div id="storia">
-          <div id="sep_descr">
-            <div id="title_left"><h2>Studio</h2></div>
-            <div id="title_right"><h2>Lavoro</h2></div>
-          </div>
-          <div class="timeline">
-
-            <div class="container right">
-              <div class="content">
-                <h2>23 nov 2020</h2>
-                <p>Abilitazione alla professione di Ingegnere dell'informazione Junior (Sez. B)</p>
-              </div>
-            </div>
-
-            <div class="container right">
-              <div class="content">
-                <h2>da 09.2018 a 07.2019</h2>
-                <p>Corso di tedesco (A1) presso D.I.G. Remscheid eV</p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>da 08.2018 a 03.2019</h2>
-                <p>Addetto al confezionamento presso Brook & Witkowski GmbH (DE)</p>
-              </div>
-            </div>
-
-            <div class="container right">
-              <div class="content">
-                <h2>16 mar 2018</h2>
-                <p>Laurea in <br> Ing. Gestionale e Informatica (Università di Palermo)</p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>da 06.2016 a 07.2016</h2>
-                <p>Tirocinio di 75 presso Telesicurezza Service s.r.l.</p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>da 08.2016 a 09.2016</h2>
-                <p>Collaborazione in un team per un progetto universitario in UML</p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>da 03.2014 a 07.2014</h2>
-                <p>Progetto universitario in team per lo sviluppo di un prodotto.</p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>da 03.2013 a 09.2013</h2>
-                <p>Progetti universitari di disegno meccanico in 2D (CAD 2D).</p>
-              </div>
-            </div>
-
-            <div class="container right">
-              <div class="content">
-                <h2>02 lug 2012</h2>
-                <p>Diploma Liceo Scientifico presso Liceo Scientifico A. Sciascia (Canicattì)</p>
-              </div>
-            </div>
-
-            <div class="container right">
-              <div class="content">
-                <h2>02 lug 2007</h2>
-                <p>Diploma Scuola Media presso Istituto Comprensivo Statale "L. Pirandello" (Canicattì) </p>
-              </div>
-            </div>
-
-            <div class="container left">
-              <div class="content">
-                <h2>09 mar 2006</h2>
-                <p>European Computer Driver Licence (ECDL)</p>
-              </div>
-            </div>
-
-            <div class="container right">
-              <div class="content">
-                <h2>02 lug 2004</h2>
-                <p>Diploma Scuola Elementare presso la scuola "V. La Carrubba" (Canicattì) </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div id="competenze">
-          <p>Queste sono solo alcune delle mie competenze, per conoscere tutte le mie competenze (con le dovute descrizioni), troverete tutto nella pagina
-            <a href="competenze.html">Le Mie Competenze</a>
-          </p>
-          <div id="LWQ">
-            <div id="Linux">
-              <h2><img src="images/tux.png" alt="Linux"> Linux</h2>
-                    <span>
-                      Utilizzo Linux da molti anni come unico OS per il mio laptop. 
-                      Oggi Utilizzo una distribuzione Arch Linux.</span>
-            </div>
-            <div id="webdev">
-              <span>
-                <h2>
-                  <img src="images/webdev.png" alt="Web Development"> Web Development (Frontend)</h2>
-                Ho studiato HTML, CSS (usando anche SASS e SCSS) e JavaScript (usando anche jQuery) da autodidatta,
-                dopo tanti esercizi di utilizzo riesco a padroneggiarli discretamente.
-              </span>
-            </div>
-            <div id="qt">
-              <span>
-                <h2>
-                  <img src="images/qt.png" alt="Qt"> Qt</h2>
-                Ho usato la libreria Qt (con C++) per poter dare una GUI ai miei progetti in C++.
-              </span>
-            </div>
-          </div>
-          <div id="CPG">
-            <div id="C">
-              <span>
-                <h2><img src="images/c_c++.png" alt="C C++"> C/C++</h2>
-                Sono stati i miei primi linguaggi di programmazione,
-                li utilizzo ancora oggi per vari progetti vista la loro diffusione.
-              </span>
-            </div>
-            <div id="python">
-              <span>
-                <h2><img src="images/python.png" alt="Python"> Python</h2>
-                Studiato da autodidatta e usato per fare alcuni progetti personali.
-                Sono molto sorpreso per la sua estrema potenza, semplicità e versatilità.
-              </span>
-            </div>
-            <div id="git">
-              <span>
-                <h2><img src="images/git.png" alt="Git"> Git</h2>
-                Utilizzo git per poter caricare (push o "pushare") i miei progetti sul mio profilo GitHub, 
-                evitando così che vadano persi.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <footer>
-          <p>Contatti:</p>
-          <div id="linkContatti">
-              <a href="https://github.com/stefanolod">
-                  <img src="images/github.png" alt="GitHub" title="GitHub">
-              </a>
-              <a href="https://www.linkedin.com/in/stefano-lodico-8416341b1/">
-                  <img src="images/linked-in.png" alt="LinkedIn" title="LinkedIn">
-              </a>
-              <a href="mailto:s.lodico@outlook.it">
-                  <img src="images/mail.png" alt="E-Mail" title="E-Mail">
-              </a>
-              <a href="https://t.me/ingStefano">
-                  <img src="images/telegram.png" alt="Telegram" title="Telegram">
-              </a>
-          </div>
       </footer>
     </div>
   </body>

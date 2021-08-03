@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/competenze_page.css">
         <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/riquadri_competenze.js"></script>
@@ -12,33 +12,31 @@
     <body>
         <div id="tutto">
             <div id="titolo">
-                <div id="menuDivButton">
-                    <a href="#" id="menu_button">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span>Menu</span>
-                    </a>
+                <div id="menuDivButton" onclick="avvia_menu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span>Menu</span>
                 </div>
                 <p>Competenze</p>
             </div>
             <div id="menu">
                 <div id="lista">
-                    <div id="exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
                     <ul>
+                        <div id="exit"><img src="images/x_exit.png" alt="X"></div>
                         <li><a href="index.html"><img src="images/home.png" alt="Home"> Home</a></li>
                         <li><a href="la_mia_storia.html"><img src="images/biography.png" alt="BIO"> La Mia Storia</a></li>
                         <li><a href="competenze.html"><img src="images/skills.png" alt="Skills"> Competenze</a></li>
                         <li><a href="hobby.html"><img src="images/hobby.png" alt="Hobby"> Hobby</a></li>
                     </ul>
-                    </div>
-                    <div id="resto"></div>
                 </div>
+                <div id="resto"></div>
+            </div>
             <div id="competenze_div">
+                <p>Questa è una lista delle mie competenze:
+                    <br> se volete sapere di più relativamente ad una competenza, basta cliccare su di essa e si aprirà un riquadro che la descrive.
+                </p>
                 <ul>
-                    <p>Questa è una lista delle mie competenze:
-                        <br> se volete sapere di più relativamente ad una competenza, basta cliccare su di essa e si aprirà un riquadro che la descrive.
-                    </p>
                     <li><h2>» Competenze Linguistiche </h2>
                         <div id="lingue">
                             <a href="#" onclick="mostra_descrizione(this)" id="tedesco">
@@ -115,6 +113,7 @@
                 <div id="competenza_exit"><a href="javascript:void(0)"><img src="images/x_exit.png" alt="X"></a></div>
                 <iframe src="#" id="descrizione_frame"></iframe>
             </div>
+
             <footer>
                 <p>Contatti:</p>
                 <div id="linkContatti">
