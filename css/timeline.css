@@ -41,18 +41,6 @@
   clear: both;
 }
 @media only screen and (min-width: 768px) {
-  #sep_descr {
-    display: flex;
-  }
-  #sep_descr #title_right{
-    position: relative;
-    left: 30%;
-  }
-  #sep_descr #title_left{
-    position: relative;
-    left: 60%;
-  }
-
   #storia {
     position: relative;
     display: grid;
