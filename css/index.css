@@ -451,7 +451,7 @@ footer #linkContatti a img {
   height: 300px;
   border-radius: 10px;
   position: relative;
-  top: 50%;
+  top: 20px;
   left: 1%;
 }
 #foto_profilo_div #foto_profilo_exit {
@@ -469,7 +469,7 @@ footer #linkContatti a img {
   position: relative;
   background-color: #fff;
   z-index: 1;
-  top: 50%;
+  top: 20px;
   left: 0%;
 }
 #foto_profilo_div #foto_profilo_exit img {
@@ -597,7 +597,7 @@ footer #linkContatti a img {
 }
 #sep_descr #title_left {
   position: relative;
-  transform: translateX(-90%);
+  transform: translateX(-190%);
 }
 
 #storia {
@@ -627,13 +627,14 @@ footer #linkContatti a img {
 }
 
 .container_left {
-  transform: translateX(-75%);
+  position: relative;
+  transform: translateX(-85%);
 }
 .container_left #square {
   width: 20px;
   height: 6px;
   background-color: #000;
-  transform: translate(700%, 1040%);
+  transform: translate(675%, 1040%);
 }
 .container_left #square #point {
   width: 10px;
@@ -646,13 +647,14 @@ footer #linkContatti a img {
 }
 
 .container_right {
-  transform: translateX(75%);
+  position: relative;
+  transform: translateX(60%);
 }
 .container_right #square {
   width: 20px;
   height: 6px;
   background-color: #000;
-  transform: translate(-250%, 1040%);
+  transform: translate(-225%, 1040%);
 }
 .container_right #square:after {
   content: "";
@@ -694,107 +696,69 @@ footer #linkContatti a img {
   padding: 2% 5% 0%;
 }
 
-@media only screen and (min-width: 768px) {
-  #sep_descr {
-    display: flex;
-  }
+@media only screen and (max-width: 400px) {
   #sep_descr #title_right {
-    position: relative;
+    left: 0px;
+  }
+  #sep_descr #title_left {
+    left: 55px;
+  }
+  
+  .container_left {
+    left: 20px;
+  }
+  .container_left #square {
+    transform: translate(675%, 1040%);
+  }
+  .container_right {
+    left: 15px;
+  }
+  .container_right #square {
+    transform: translate(-225%, 1040%);
+  }
+}
+
+@media only screen and (min-width:360px) and (max-width: 768px) {
+  #sep_descr #title_right {
     transform: translateX(80%);
   }
   #sep_descr #title_left {
-    position: relative;
+    transform: translateX(-190%);
+  }
+  
+  .container_left {
+    transform: translateX(-85%);
+  }
+  .container_left #square {
+    transform: translate(675%, 1040%);
+  }
+  
+  .container_right {
+    transform: translateX(60%);
+  }
+  .container_right #square {
+    transform: translate(-225%, 1040%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #sep_descr #title_right {
+    transform: translateX(80%);
+  }
+  #sep_descr #title_left {
     transform: translateX(-200%);
   }
 
-  #storia {
-    position: relative;
-    display: grid;
-    width: 100%;
-    height: auto;
-  }
-
-  .timeline {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border-top-left-radius: 100%;
-    border-top-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
-    position: relative;
-    width: 6px;
-    height: 96%;
-    top: 3%;
-    bottom: 3%;
-    left: 50%;
-    background-color: #000;
-    border-radius: 10px;
-  }
-
   .container_left {
-    position: relative;
     transform: translateX(-110%);
   }
   .container_left #square {
-    width: 30px;
-    height: 6px;
-    background-color: #000;
     transform: translate(750%, 1040%);
   }
-  .container_left #square #point {
-    width: 10px;
-    height: 10px;
-    position: relative;
-    right: 30%;
-    background-color: #000;
-    border-radius: 100%;
-    transform: translateY(-2px);
-  }
-
   .container_right {
     transform: translateX(47%);
   }
   .container_right #square {
-    width: 30px;
-    height: 6px;
-    background-color: #000;
     transform: translate(-180%, 1040%);
-  }
-  .container_right #square:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  .container_right #square #point {
-    width: 10px;
-    height: 10px;
-    position: relative;
-    left: 90%;
-    background-color: #000;
-    border-radius: 100%;
-    transform: translateY(-2px);
-  }
-
-  .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    box-shadow: 1px 3px 5px 1px #1d1d1d;
-    transition: box-shadow 0.5s;
-    max-width: 200px;
-    margin: 5% 2% 1%;
-    padding: 0% 5% 0%;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-  }
-  .content h2 {
-    margin-bottom: 2%;
-    text-align: center;
-  }
-  .content p {
-    margin-top: 2%;
   }
 }
