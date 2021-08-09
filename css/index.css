@@ -748,15 +748,17 @@ footer #linkContatti a img {
   #sep_descr #title_left {
     transform: translateX(-200%);
   }
-
+  #storia {
+    min-width: 98%;
+  }
   .container_left {
-    transform: translateX(-110%);
+    transform: translateX(-118%);
   }
   .container_left #square {
     transform: translate(750%, 1040%);
   }
   .container_right {
-    transform: translateX(47%);
+    transform: translateX(28%);
   }
   .container_right #square {
     transform: translate(-180%, 1040%);
