@@ -622,7 +622,7 @@ footer #linkContatti a img {
   height: 96%;
   top: 3%;
   bottom: 3%;
-  left: 45%;
+  left: 50%;
   background-color: #000;
 }
 
@@ -677,7 +677,6 @@ footer #linkContatti a img {
   align-items: center;
   flex-wrap: wrap;
   box-shadow: 1px 3px 5px 1px #1d1d1d;
-  transition: box-shadow 0.5s;
   max-width: 100px;
   margin: 5% 0% 1%;
   margin-left: 0%;
@@ -705,36 +704,36 @@ footer #linkContatti a img {
   }
   
   .container_left {
-    left: 20px;
+    left: 40px;
   }
   .container_left #square {
     transform: translate(675%, 1040%);
   }
   .container_right {
-    left: 15px;
+    left: 35px;
   }
   .container_right #square {
     transform: translate(-225%, 1040%);
   }
 }
 
-@media only screen and (min-width:360px) and (max-width: 768px) {
+@media only screen and (min-width:400px) and (max-width: 768px) {
   #sep_descr #title_right {
-    transform: translateX(80%);
+    transform: translateX(175%);
   }
   #sep_descr #title_left {
     transform: translateX(-190%);
   }
   
   .container_left {
-    transform: translateX(-85%);
+    transform: translateX(-60%);
   }
   .container_left #square {
     transform: translate(675%, 1040%);
   }
   
   .container_right {
-    transform: translateX(60%);
+    transform: translateX(85%);
   }
   .container_right #square {
     transform: translate(-225%, 1040%);
@@ -743,7 +742,7 @@ footer #linkContatti a img {
 
 @media only screen and (min-width: 768px) {
   #sep_descr #title_right {
-    transform: translateX(80%);
+    transform: translateX(225%);
   }
   #sep_descr #title_left {
     transform: translateX(-200%);
@@ -751,16 +750,25 @@ footer #linkContatti a img {
   #storia {
     min-width: 98%;
   }
+  .content {
+    max-width: 200px;
+  }
+  .content h2 {
+    font-size: 18px;
+  }
+  .content p {
+    font-size: 16px;
+  }
   .container_left {
-    transform: translateX(-118%);
+    transform: translateX(-75%);
   }
   .container_left #square {
-    transform: translate(750%, 1040%);
+    transform: translate(1150%, 1040%);
   }
   .container_right {
-    transform: translateX(28%);
+    transform: translateX(75%);
   }
   .container_right #square {
-    transform: translate(-180%, 1040%);
+    transform: translate(-230%, 1040%);
   }
 }
