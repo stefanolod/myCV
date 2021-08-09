@@ -361,20 +361,20 @@ footer #linkContatti a img {
   margin: 20px 5px 10px;
   border-radius: 10px;
 }
-#CI #dati, #storia #dati, #competenze #dati {
+#CI #dati {
   position: relative;
   display: grid;
   margin: 10px 10px 20px;
 }
-#CI #foto_profilo, #storia #foto_profilo, #competenze #foto_profilo {
+#CI #foto_profilo {
   position: relative;
   border-radius: 50%;
   left: 0;
 }
-#CI #foto_profilo a, #storia #foto_profilo a, #competenze #foto_profilo a {
+#CI #foto_profilo a {
   color: #000;
 }
-#CI #foto_profilo a img, #storia #foto_profilo a img, #competenze #foto_profilo a img {
+#CI #foto_profilo a img{
   width: 80px;
   height: auto;
   border-radius: 50%;
@@ -387,28 +387,27 @@ footer #linkContatti a img {
     min-width: 98%;
     margin: 13px;
   }
-  #CI #foto_profilo, #storia #foto_profilo, #competenze #foto_profilo {
+  #CI #foto_profilo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    position: relative;
     border-radius: 100%;
     min-width: 100%;
   }
-  #CI #foto_profilo a, #storia #foto_profilo a, #competenze #foto_profilo a {
+  #CI #foto_profilo a {
     color: #000;
   }
-  #CI #foto_profilo a img, #storia #foto_profilo a img, #competenze #foto_profilo a img {
+  #CI #foto_profilo a img {
     width: 120px;
     height: auto;
     border-radius: 100%;
   }
-  #CI #foto_profilo a img:hover, #storia #foto_profilo a img:hover, #competenze #foto_profilo a img:hover {
+  #CI #foto_profilo a img:hover {
     box-shadow: 1px 3px 5px 1px #1d1d1d;
     transition: box-shadow 0.5s;
   }
-  #CI #dati, #storia #dati, #competenze #dati {
+  #CI #dati {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,19 +415,19 @@ footer #linkContatti a img {
     min-width: 100%;
     position: relative;
   }
-  #CI #dati:after, #storia #dati:after, #competenze #dati:after {
+  #CI #dati:after {
     content: "";
     display: table;
     clear: both;
   }
-  #CI #dati #nome, #CI #dati #nazionalita, #CI #dati #lingue_conosciute, #CI #dati #residenza, #storia #dati #nome, #storia #dati #nazionalita, #storia #dati #lingue_conosciute, #storia #dati #residenza, #competenze #dati #nome, #competenze #dati #nazionalita, #competenze #dati #lingue_conosciute, #competenze #dati #residenza {
+  #CI #dati #nome, #CI #dati #nazionalita, #CI #dati #lingue_conosciute, #CI #dati #residenza {
     margin-right: 90px;
   }
-  #CI #dati #nome span:first-child h2, #CI #dati #nazionalita span:first-child h2, #CI #dati #lingue_conosciute span:first-child h2, #CI #dati #residenza span:first-child h2, #storia #dati #nome span:first-child h2, #storia #dati #nazionalita span:first-child h2, #storia #dati #lingue_conosciute span:first-child h2, #storia #dati #residenza span:first-child h2, #competenze #dati #nome span:first-child h2, #competenze #dati #nazionalita span:first-child h2, #competenze #dati #lingue_conosciute span:first-child h2, #competenze #dati #residenza span:first-child h2 {
+  #CI #dati #nome span:first-child h2 {
     transform: translateX(-10px);
     margin-bottom: 5px;
   }
-  #CI #dati #nome:last-child, #CI #dati #nazionalita:last-child, #CI #dati #lingue_conosciute:last-child, #CI #dati #residenza:last-child, #storia #dati #nome:last-child, #storia #dati #nazionalita:last-child, #storia #dati #lingue_conosciute:last-child, #storia #dati #residenza:last-child, #competenze #dati #nome:last-child, #competenze #dati #nazionalita:last-child, #competenze #dati #lingue_conosciute:last-child, #competenze #dati #residenza:last-child {
+  #CI #dati #nome:last-child {
     margin-right: 0%;
   }
 }
@@ -594,11 +593,11 @@ footer #linkContatti a img {
 }
 #sep_descr #title_right {
   position: relative;
-  transform: translateX(75%);
+  transform: translateX(80%);
 }
 #sep_descr #title_left {
   position: relative;
-  transform: translateX(-100%);
+  transform: translateX(-90%);
 }
 
 #storia {
@@ -701,11 +700,11 @@ footer #linkContatti a img {
   }
   #sep_descr #title_right {
     position: relative;
-    left: 30%;
+    transform: translateX(80%);
   }
   #sep_descr #title_left {
     position: relative;
-    left: 60%;
+    transform: translateX(-200%);
   }
 
   #storia {
@@ -736,7 +735,7 @@ footer #linkContatti a img {
 
   .container_left {
     position: relative;
-    transform: translateX(-75%);
+    transform: translateX(-110%);
   }
   .container_left #square {
     width: 30px;
@@ -755,13 +754,13 @@ footer #linkContatti a img {
   }
 
   .container_right {
-    transform: translateX(75%);
+    transform: translateX(47%);
   }
   .container_right #square {
     width: 30px;
     height: 6px;
     background-color: #000;
-    transform: translate(-160%, 1040%);
+    transform: translate(-180%, 1040%);
   }
   .container_right #square:after {
     content: "";
