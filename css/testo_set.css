@@ -21,23 +21,39 @@ hr {
 #titolo {
   box-shadow: 1px 3px 5px 1px #777777;
   position: sticky;
-  top: 0%;
+  top: 0;
   z-index: 1;
   width: 100%;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
+  max-height: 50px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #000;
   background-color: #E8E8E8;
 }
 #titolo p {
+  position: relative;
   text-align: center;
-  font-size: xx-large;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(-110%);
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #titolo p{
+    font-size: 50px;
+    font-weight: bold;
+    transform: translateY(-120%);
+  }
+}
 @media only screen and (min-width: 768px) {
   #titolo {
     padding-bottom: 10px;
+    max-width: none;
+  }
+  #titolo p{
+    font-size: 38px;
+    font-weight: bold;
+    transform: translateY(-110%);
   }
 }
 #testo {
@@ -85,32 +101,41 @@ hr {
   margin-top: 0px;
   margin-left: 0px;
   left: 15px;
-  top: 30px;
+  top: 15px;
 }
 #menuDivButton span {
   width: 35px;
-  height: 5px;
+  height: 4px;
   display: block;
   margin: 4px;
   background: #222;
   border-radius: 9px;
 }
-#menuDivButton span:last-child {
-  background: none;
-  text-align: center;
-  border-radius: 0%;
-  font-size: 14px;
+#menuDivButton:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+  transform: scale3d(0.9, 0.9, 0.9);
+  transition: transform 1s;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-  #menuDivButton:hover {
-    opacity: 0.7;
-    transition: opacity 1s;
-    transform: scale3d(0.9, 0.9, 0.9);
-    transition: transform 1s;
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #menuDivButton {
+    top: 10px;
   }
-  #menuDivButton:hover {
-    cursor: pointer;
+  #menuDivButton span {
+    width: 40px;
+    height: 6px;
+    margin: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menuDivButton span {
+    width: 40px;
+    height: 6px;
+    margin: 3px;
+    background: #222;
+    border-radius: 9px;
   }
 }
 #menu #lista {
@@ -192,6 +217,7 @@ hr {
     border-top-right-radius: 10px;
   }
 }
+
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
   #menu #lista {
     width: 35%;
@@ -259,8 +285,7 @@ body {
     flex-wrap: wrap;
     background-color: #000;
   }
-}
-@media only screen and (min-width: 768px) {
+  
   #tutto {
     display: flex;
     justify-content: center;

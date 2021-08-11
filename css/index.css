@@ -21,23 +21,39 @@ hr {
 #titolo {
   box-shadow: 1px 3px 5px 1px #777777;
   position: sticky;
-  top: 0%;
+  top: 0;
   z-index: 1;
   width: 100%;
-  margin-bottom: 25px;
-  padding-bottom: 20px;
+  max-height: 50px;
+  margin-bottom: 10px;
   border-bottom: 2px solid #000;
   background-color: #E8E8E8;
 }
 #titolo p {
+  position: relative;
   text-align: center;
-  font-size: xx-large;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translateY(-110%);
   margin-bottom: 0px;
 }
 
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #titolo p{
+    font-size: 50px;
+    font-weight: bold;
+    transform: translateY(-120%);
+  }
+}
 @media only screen and (min-width: 768px) {
   #titolo {
     padding-bottom: 10px;
+    max-width: none;
+  }
+  #titolo p{
+    font-size: 38px;
+    font-weight: bold;
+    transform: translateY(-110%);
   }
 }
 #testo {
@@ -85,32 +101,41 @@ hr {
   margin-top: 0px;
   margin-left: 0px;
   left: 15px;
-  top: 30px;
+  top: 12px;
 }
 #menuDivButton span {
   width: 35px;
-  height: 5px;
+  height: 4px;
   display: block;
   margin: 4px;
   background: #222;
   border-radius: 9px;
 }
-#menuDivButton span:last-child {
-  background: none;
-  text-align: center;
-  border-radius: 0%;
-  font-size: 14px;
+#menuDivButton:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+  transform: scale3d(0.9, 0.9, 0.9);
+  transition: transform 1s;
+  cursor: pointer;
 }
 
-@media only screen and (min-width: 768px) {
-  #menuDivButton:hover {
-    opacity: 0.7;
-    transition: opacity 1s;
-    transform: scale3d(0.9, 0.9, 0.9);
-    transition: transform 1s;
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #menuDivButton {
+    top: 10px;
   }
-  #menuDivButton:hover {
-    cursor: pointer;
+  #menuDivButton span {
+    width: 40px;
+    height: 6px;
+    margin: 6px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #menuDivButton span {
+    width: 40px;
+    height: 6px;
+    margin: 3px;
+    background: #222;
+    border-radius: 9px;
   }
 }
 #menu #lista {
@@ -314,6 +339,25 @@ footer #linkContatti a img {
   height: auto;
 }
 
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  footer {
+    width: 100%;
+  }
+  footer p {
+    padding-top: 0px;
+    font-size: 40px;
+  }
+  footer #linkContatti a:hover {
+    opacity: 0.7;
+    transition: opacity 1s;
+    transform: scale3d(0.9, 0.9, 0.9);
+    transition: transform 1s;
+  }
+  footer #linkContatti a img {
+    width: 85px;
+    height: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   footer {
     width: 100%;
@@ -344,7 +388,11 @@ footer #linkContatti a img {
 #invito a:hover {
   font-style: oblique;
 }
-
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #invito {
+    font-size: 27px;
+  }
+}
 @media only screen and (min-width: 768px) {
   #invito {
     font-size: 20px;
@@ -364,12 +412,18 @@ footer #linkContatti a img {
 #CI #dati {
   position: relative;
   display: grid;
-  margin: 10px 10px 20px;
+  margin: 10px 0px 20px;
+  left: -40px;
 }
 #CI #foto_profilo {
   position: relative;
-  border-radius: 50%;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 100%;
+  min-width: 100%;
+  margin-top: 10px;
 }
 #CI #foto_profilo a {
   color: #000;
@@ -380,6 +434,45 @@ footer #linkContatti a img {
   border-radius: 50%;
 }
 
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #CI, #storia, #competenze {
+    min-width: 90%;
+    margin: 1% 2.5%;
+    border-radius: 10px;
+  }
+  #CI #dati {
+    position: relative;
+    display: grid;
+    left: -100px;
+    margin: 0px 0px 20px;
+    padding: 10px;
+  }
+  #CI #dati #nome span h2, 
+  #CI #dati #nazionalita span h2, 
+  #CI #dati #lingue_conosciute span h2, 
+  #CI #dati #residenza span h2 {
+    font-size: 38px;
+  }
+  #CI #dati #nome span:last-child, 
+  #CI #dati #nazionalita span:last-child, 
+  #CI #dati #lingue_conosciute span:last-child, 
+  #CI #dati #residenza span:last-child {
+    font-size: 28px;
+  }
+  #CI #foto_profilo {
+    border-radius: 100%;
+    min-width: 100%;
+    margin-top: 50px;
+  }
+  #CI #foto_profilo a {
+    color: #000;
+  }
+  #CI #foto_profilo a img{
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+}
 @media only screen and (min-width: 768px) {
   #CI, #storia, #competenze {
     position: relative;
@@ -420,7 +513,10 @@ footer #linkContatti a img {
     display: table;
     clear: both;
   }
-  #CI #dati #nome, #CI #dati #nazionalita, #CI #dati #lingue_conosciute, #CI #dati #residenza {
+  #CI #dati #nome, 
+  #CI #dati #nazionalita, 
+  #CI #dati #lingue_conosciute, 
+  #CI #dati #residenza {
     margin-right: 90px;
   }
   #CI #dati #nome span:first-child h2 {
@@ -518,7 +614,18 @@ footer #linkContatti a img {
   width: fit-content;
   margin-bottom: 10px;
 }
-#competenze #LWQ #Linux, #competenze #LWQ #webdev, #competenze #LWQ #qt, #competenze #LWQ #python, #competenze #LWQ #C, #competenze #LWQ #git, #competenze #CPG #Linux, #competenze #CPG #webdev, #competenze #CPG #qt, #competenze #CPG #python, #competenze #CPG #C, #competenze #CPG #git {
+#competenze #LWQ #Linux, 
+#competenze #LWQ #webdev, 
+#competenze #LWQ #qt, 
+#competenze #LWQ #python, 
+#competenze #LWQ #C, 
+#competenze #LWQ #git, 
+#competenze #CPG #Linux, 
+#competenze #CPG #webdev, 
+#competenze #CPG #qt, 
+#competenze #CPG #python, 
+#competenze #CPG #C, 
+#competenze #CPG #git {
   box-shadow: 1px 3px 5px 1px #1d1d1d;
   transition: box-shadow 0.5s;
   width: 300px;
@@ -533,15 +640,113 @@ footer #linkContatti a img {
   background-color: #f5f5f5;
   border-radius: 10px;
 }
-#competenze #LWQ #Linux img, #competenze #LWQ #webdev img, #competenze #LWQ #qt img, #competenze #LWQ #python img, #competenze #LWQ #C img, #competenze #LWQ #git img, #competenze #CPG #Linux img, #competenze #CPG #webdev img, #competenze #CPG #qt img, #competenze #CPG #python img, #competenze #CPG #C img, #competenze #CPG #git img {
+#competenze #LWQ #Linux img, 
+#competenze #LWQ #webdev img, 
+#competenze #LWQ #qt img, 
+#competenze #LWQ #python img, 
+#competenze #LWQ #C img, 
+#competenze #LWQ #git img, 
+#competenze #CPG #Linux img, 
+#competenze #CPG #webdev img, 
+#competenze #CPG #qt img, 
+#competenze #CPG #python img, 
+#competenze #CPG #C img, 
+#competenze #CPG #git img {
   margin-bottom: 0%;
 }
-#competenze #LWQ #Linux h2, #competenze #LWQ #webdev h2, #competenze #LWQ #qt h2, #competenze #LWQ #python h2, #competenze #LWQ #C h2, #competenze #LWQ #git h2, #competenze #CPG #Linux h2, #competenze #CPG #webdev h2, #competenze #CPG #qt h2, #competenze #CPG #python h2, #competenze #CPG #C h2, #competenze #CPG #git h2 {
+#competenze #LWQ #Linux h2, 
+#competenze #LWQ #webdev h2, 
+#competenze #LWQ #qt h2, 
+#competenze #LWQ #python h2, 
+#competenze #LWQ #C h2, 
+#competenze #LWQ #git h2, 
+#competenze #CPG #Linux h2, 
+#competenze #CPG #webdev h2, 
+#competenze #CPG #qt h2, 
+#competenze #CPG #python h2, 
+#competenze #CPG #C h2, 
+#competenze #CPG #git h2 {
   display: block;
   margin-top: 0%;
   margin-bottom: 3%;
 }
-
+@media only screen and (min-width:500px) and (max-width: 768px) {
+  #competenze {
+    display: grid;
+  }
+  #competenze p {
+    font-size: 27px;
+    padding: 2px 50px 0px;
+  }
+  #competenze img {
+    width: auto;
+    height: 50px;
+  }
+  #competenze #LWQ, #competenze #CPG {
+    margin-bottom: 10px;
+  }
+  #competenze #LWQ #Linux, 
+  #competenze #LWQ #webdev, 
+  #competenze #LWQ #qt, 
+  #competenze #LWQ #python, 
+  #competenze #LWQ #C, 
+  #competenze #LWQ #git, 
+  #competenze #CPG #Linux, 
+  #competenze #CPG #webdev, 
+  #competenze #CPG #qt, 
+  #competenze #CPG #python, 
+  #competenze #CPG #C, 
+  #competenze #CPG #git {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    margin: 20px;
+  }
+  #competenze #LWQ #Linux img, 
+  #competenze #LWQ #webdev img, 
+  #competenze #LWQ #qt img, 
+  #competenze #LWQ #python img, 
+  #competenze #LWQ #C img, 
+  #competenze #LWQ #git img, 
+  #competenze #CPG #Linux img, 
+  #competenze #CPG #webdev img, 
+  #competenze #CPG #qt img, 
+  #competenze #CPG #python img, 
+  #competenze #CPG #C img, 
+  #competenze #CPG #git img {
+    margin-bottom: 0%;
+  }
+  #competenze #LWQ #Linux h2, 
+  #competenze #LWQ #webdev h2, 
+  #competenze #LWQ #qt h2, 
+  #competenze #LWQ #python h2, 
+  #competenze #LWQ #C h2, 
+  #competenze #LWQ #git h2, 
+  #competenze #CPG #Linux h2, 
+  #competenze #CPG #webdev h2, 
+  #competenze #CPG #qt h2, 
+  #competenze #CPG #python h2, 
+  #competenze #CPG #C h2, 
+  #competenze #CPG #git h2 {
+    margin-top: 0%;
+    margin-bottom: 3%;
+    font-size: 30px;
+  }
+  #competenze #LWQ #Linux span,
+  #competenze #LWQ #webdev span,
+  #competenze #LWQ #qt span,
+  #competenze #LWQ #python span,
+  #competenze #LWQ #C span,
+  #competenze #LWQ #git span,
+  #competenze #CPG #Linux span,
+  #competenze #CPG #webdev span,
+  #competenze #CPG #qt span,
+  #competenze #CPG #python span,
+  #competenze #CPG #C span,
+  #competenze #CPG #git span{
+    font-size: 25px;
+  }
+}
 @media only screen and (min-width: 768px) {
   #competenze {
     display: grid;
@@ -560,7 +765,18 @@ footer #linkContatti a img {
     width: fit-content;
     margin: 0px 60px 10px;
   }
-  #competenze #LWQ #Linux, #competenze #LWQ #webdev, #competenze #LWQ #qt, #competenze #LWQ #python, #competenze #LWQ #C, #competenze #LWQ #git, #competenze #CPG #Linux, #competenze #CPG #webdev, #competenze #CPG #qt, #competenze #CPG #python, #competenze #CPG #C, #competenze #CPG #git {
+  #competenze #LWQ #Linux, 
+  #competenze #LWQ #webdev, 
+  #competenze #LWQ #qt, 
+  #competenze #LWQ #python, 
+  #competenze #LWQ #C, 
+  #competenze #LWQ #git, 
+  #competenze #CPG #Linux, 
+  #competenze #CPG #webdev, 
+  #competenze #CPG #qt, 
+  #competenze #CPG #python, 
+  #competenze #CPG #C, 
+  #competenze #CPG #git {
     box-shadow: 1px 3px 5px 1px #1d1d1d;
     transition: box-shadow 0.5s;
     width: 300px;
@@ -570,7 +786,18 @@ footer #linkContatti a img {
     margin: 20px;
     border-radius: 10px;
   }
-  #competenze #LWQ #Linux h2, #competenze #LWQ #webdev h2, #competenze #LWQ #qt h2, #competenze #LWQ #python h2, #competenze #LWQ #C h2, #competenze #LWQ #git h2, #competenze #CPG #Linux h2, #competenze #CPG #webdev h2, #competenze #CPG #qt h2, #competenze #CPG #python h2, #competenze #CPG #C h2, #competenze #CPG #git h2 {
+  #competenze #LWQ #Linux h2, 
+  #competenze #LWQ #webdev h2, 
+  #competenze #LWQ #qt h2, 
+  #competenze #LWQ #python h2, 
+  #competenze #LWQ #C h2, 
+  #competenze #LWQ #git h2, 
+  #competenze #CPG #Linux h2, 
+  #competenze #CPG #webdev h2, 
+  #competenze #CPG #qt h2, 
+  #competenze #CPG #python h2, 
+  #competenze #CPG #C h2, 
+  #competenze #CPG #git h2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,7 +922,7 @@ footer #linkContatti a img {
   padding: 2% 5% 0%;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   #sep_descr #title_right {
     left: 0px;
   }
@@ -717,26 +944,43 @@ footer #linkContatti a img {
   }
 }
 
-@media only screen and (min-width:400px) and (max-width: 768px) {
+@media only screen and (min-width:500px) and (max-width: 768px) {
   #sep_descr #title_right {
-    transform: translateX(175%);
+    transform: translateX(100%);
   }
   #sep_descr #title_left {
-    transform: translateX(-190%);
+    transform: translateX(-100%);
   }
-  
+  #sep_descr #title_right h2, 
+  #sep_descr #title_left h2 {
+    font-size: 40px;
+  }
+  .content {
+    max-width: 180px;
+  }
+  .content h2 {
+    font-size: 30px;
+  }
+  .content p {
+    font-size: 25px;
+  }
   .container_left {
-    transform: translateX(-60%);
+    transform: translateX(-75%);
   }
   .container_left #square {
-    transform: translate(675%, 1040%);
+    width: 60px;
+    transform: translate(390%, 1040%);
+  }
+  .container_left #square #point {
+    left: 0px;
   }
   
   .container_right {
     transform: translateX(85%);
   }
   .container_right #square {
-    transform: translate(-225%, 1040%);
+    width: 60px;
+    transform: translate(-130%, 1040%);
   }
 }
 
