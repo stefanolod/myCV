@@ -21,39 +21,69 @@ hr {
 #titolo {
   box-shadow: 1px 3px 5px 1px #777777;
   position: sticky;
+  display: flex;
+  flex-wrap: wrap;
   top: 0;
   z-index: 1;
   width: 100%;
-  max-height: 50px;
+  height: 30px;
   margin-bottom: 10px;
   border-bottom: 2px solid #000;
-  background-color: #E8E8E8;
+  background-color: #000;
 }
-#titolo p {
+#titolo #nomePagina {
+  width: 95%;
   position: relative;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  transform: translateY(-110%);
   margin-bottom: 0px;
+
+}
+#titolo #nomePagina h2{
+  color: #ffffcc;
+  text-align: center;
+  position: relative;
+  font-weight: bold;
+  margin-top: 0%;
 }
 
 @media only screen and (min-width:500px) and (max-width: 768px) {
-  #titolo p{
+  #titolo #nomePagina h2{
     font-size: 50px;
     font-weight: bold;
-    transform: translateY(-120%);
   }
 }
 @media only screen and (min-width: 768px) {
   #titolo {
     padding-bottom: 10px;
-    max-width: none;
   }
-  #titolo p{
+  #titolo #nomePagina h2{
     font-size: 38px;
-    font-weight: bold;
-    transform: translateY(-110%);
+  }
+}
+#titolo #menuDivButton {
+  position: relative;
+  width: 5%;
+  height: 30px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+#titolo #menuDivButton span {
+  width: 35px;
+  height: 5px;
+  position: relative;
+  left: 25%;
+  display: block;
+  margin-top: 4px;
+  background: #ffffcc;
+  border-radius: 50px;
+}
+#titolo #menuDivButton:hover {
+  opacity: 0.7;
+  transition: opacity 1s;
+  cursor: pointer;
+}
+@media only screen and (min-width: 768px) {
+  #titolo #menuDivButton{
+    top: 5px;
   }
 }
 #testo {
@@ -94,48 +124,6 @@ hr {
   border-radius: 50%;
 }
 
-#menuDivButton {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  margin-top: 0px;
-  margin-left: 0px;
-  left: 15px;
-  top: 30px;
-}
-#menuDivButton span {
-  width: 35px;
-  height: 5px;
-  display: block;
-  margin: 4px;
-  background: #222;
-  border-radius: 9px;
-}  
-#menuDivButton:hover {
-  opacity: 0.7;
-  transition: opacity 1s;
-  cursor: pointer;
-}
-
-@media only screen and (min-width:500px) and (max-width: 768px) {
-  #menuDivButton {
-    top: 10px;
-  }
-  #menuDivButton span {
-    width: 40px;
-    height: 6px;
-    margin: 6px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  #menuDivButton span {
-    width: 40px;
-    height: 6px;
-    margin: 3px;
-    background: #222;
-    border-radius: 9px;
-  }
-}
 #menu #lista {
   width: 100%;
   left: 0%;
@@ -208,12 +196,6 @@ hr {
     width: 25%;
     left: 75%;
   }
-  #menu #lista {
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    border-top-right-radius: 10px;
-  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1060px) {
@@ -225,12 +207,6 @@ hr {
     width: 65%;
     left: 35%;
   }
-  #menu #lista {
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    border-top-right-radius: 10px;
-  }
 }
 @media only screen and (min-width: 1060px) and (max-width: 1300px) {
   #menu #lista {
@@ -241,12 +217,6 @@ hr {
     width: 75%;
     left: 25%;
   }
-  #menu #lista {
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    border-top-right-radius: 10px;
-  }
 }
 @media only screen and (min-width: 1300px) {
   #menu #lista {
@@ -256,12 +226,6 @@ hr {
   #menu #resto {
     width: 80%;
     left: 20%;
-  }
-  #menu #lista {
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    border-top-right-radius: 10px;
   }
 }
 body {
