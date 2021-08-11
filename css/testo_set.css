@@ -45,12 +45,6 @@ hr {
   margin-top: 0%;
 }
 
-@media only screen and (min-width:500px) and (max-width: 768px) {
-  #titolo #nomePagina h2{
-    font-size: 50px;
-    font-weight: bold;
-  }
-}
 @media only screen and (min-width: 768px) {
   #titolo {
     padding-bottom: 10px;
@@ -84,6 +78,30 @@ hr {
 @media only screen and (min-width: 768px) {
   #titolo #menuDivButton{
     top: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #titolo #menuDivButton{
+    width: 11%;
+  }
+  #titolo #nomePagina {
+    width: 89%;
+  }
+}
+@media screen and (max-width: 400px) {
+  #titolo #menuDivButton{
+    width: 15%;
+  }
+  #titolo #nomePagina {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 300px) {
+  #titolo #menuDivButton{
+    width: 22%;
+  }
+  #titolo #nomePagina {
+    width: 78%;
   }
 }
 #testo {
