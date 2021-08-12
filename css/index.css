@@ -246,12 +246,6 @@ hr {
     width: 80%;
     left: 20%;
   }
-  #menu #lista {
-    border-top-left-radius: 10px;
-  }
-  #menu #resto {
-    border-top-right-radius: 10px;
-  }
 }
 body {
   min-height: 100%;
