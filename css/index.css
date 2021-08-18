@@ -361,7 +361,6 @@ footer #linkContatti a img {
 #invito {
   text-align: center;
   font-family: serif;
-  font-size: 14px;
   padding: 0% 10%;
 }
 #invito a {
@@ -415,7 +414,38 @@ footer #linkContatti a img {
   height: auto;
   border-radius: 50%;
 }
-
+@media only screen and (max-width: 500px) {
+  #CI, #storia, #competenze {
+    min-width: 90%;
+    margin: 2.5% 2.5%;
+  }
+  #CI #dati {
+    position: relative;
+    display: grid;
+    margin: 0px 0px 20px;
+  }
+  #CI #dati #nome span h2, 
+  #CI #dati #nazionalita span h2, 
+  #CI #dati #lingue_conosciute span h2, 
+  #CI #dati #residenza span h2 {
+    font-size: 28px;
+    margin-bottom: 2px;
+    transform: translateX(-7px);
+  }
+  #CI #dati #nome span:last-child, 
+  #CI #dati #nazionalita span:last-child, 
+  #CI #dati #lingue_conosciute span:last-child, 
+  #CI #dati #residenza span:last-child {
+    font-size: 18px;
+  }
+  #CI #foto_profilo {
+    margin-top: 20px;
+  }
+  #CI #foto_profilo a img{
+    width: 120px;
+    height: auto;
+  }
+}
 @media only screen and (min-width:500px) and (max-width: 768px) {
   #CI, #storia, #competenze {
     min-width: 90%;
@@ -434,6 +464,8 @@ footer #linkContatti a img {
   #CI #dati #lingue_conosciute span h2, 
   #CI #dati #residenza span h2 {
     font-size: 38px;
+    margin-bottom: 2px;
+    transform: translateX(-7px);
   }
   #CI #dati #nome span:last-child, 
   #CI #dati #nazionalita span:last-child, 
@@ -501,9 +533,12 @@ footer #linkContatti a img {
   #CI #dati #residenza {
     margin-right: 90px;
   }
-  #CI #dati #nome span:first-child h2 {
-    transform: translateX(-10px);
+  #CI #dati #nome span h2, 
+  #CI #dati #nazionalita span h2, 
+  #CI #dati #lingue_conosciute span h2, 
+  #CI #dati #residenza span h2 {
     margin-bottom: 5px;
+    transform: translateX(-7px);
   }
   #CI #dati #nome:last-child {
     margin-right: 0%;
@@ -577,6 +612,7 @@ footer #linkContatti a img {
 #competenze p {
   text-align: center;
   font-family: serif;
+  padding: 0px 20px;
 }
 #competenze p a {
   color: #000;
